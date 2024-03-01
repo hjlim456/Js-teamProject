@@ -1,8 +1,9 @@
-
 new fullpage('#fullpage', {
     autoScrolling: true,
     scrollHorizontally: true,
-    // 기타 옵션들
+    responsiveWidth: 900,
+    afterResponsive: function(isResponsive){
+    }
 });
 
 // 운동별 칼로리 영역-미나
