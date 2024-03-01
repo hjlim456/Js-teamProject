@@ -3,3 +3,4 @@ new fullpage('#fullpage', {
     scrollHorizontally: true,
     // 기타 옵션들
 });
+
