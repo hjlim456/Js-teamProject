@@ -1,3 +1,164 @@
+
+@font-face {
+    font-family: "Pretendard-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+      format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: "Pretendard-Regular";
+    margin: 0;
+    padding: 0;
+  }
+  
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 폰트 스타일 */
+  .main-title {
+      font-family: "Pretendard-Regular";
+      font-weight: 900;
+      font-size: 2.7rem;
+      line-height: 120%;
+    }
+    
+  .sub-title {
+    font-family: "Pretendard-Regular";
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #0554f6;
+  }
+  
+  .note-title {
+    font-family: "Pretendard-Regular";
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: #0554f6;
+  }
+  
+  .note-text {
+    font-family: "Pretendard-Regular";
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+  
+  .counter-text {
+    font-family: "Pretendard-Regular";
+    font-weight: 900;
+    font-size: 7rem;
+    color: #0554f6;
+  }
+  
+  .changing-emoji {
+    font-size: 5.5rem;
+    margin-bottom: 0.2em;
+  }
+  
+  
+  /* 영역 스타일 */
+  .exercise-calories-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    min-height: 100dvh;
+  }
+  
+  .calories-title-area{
+    margin-bottom: 1em;
+  }
+  
+  .exercise-calories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin: 0.2em;
+  }
+  
+  .exercise-input-area {
+    width: 35em;
+    height: 25em;
+    background-color: #f9fafb;
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .result-area {
+    width: 35em;
+    height: 25em;
+    background-color: #f9fafb;
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .message-text-area{
+    width: 90%;
+    margin-bottom: 1em;
+  }
+  
+  .recommend-exercise{
+    margin-top: 2.5em;
+  }
+  
+  .guide-img-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-guide-img {
+    display: flex;
+  }
+  
+  .exercise-input-box {
+    border: none;
+    border-radius: 1em;
+    width: 90%;
+    height: 80px;
+    padding-left: 1em;
+  }
+  
+  /* 요소 스타일 */
+  .exercise-search-button {
+    border: none;
+    border-radius: 2em;
+    width: 90%; 
+    height: 50px;
+    background-color: #0554f6;
+    color: white;
+    margin-top: 1em;
+  }
+  
+  .img-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .img-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    position: relative;
+  }
+  
+  @media screen and (max-width: 1150px) {
+    body {
+      margin: 2em;
+    }
+  }
+
 .info-area{
     background-color: #fc6c7c;
     display: flex;
@@ -89,3 +250,4 @@
 .add-button:disabled>i{
     color: #F0F0F0;
 } */
+
