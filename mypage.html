@@ -5,31 +5,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="mypage.css">
 </head>
 <body>
-    master브랜치입니다
-    <div id="fullpage">
-        <div class="section">
-            개인 정보 입력(효준님)
-        </div>
-        <div class="section">
-            운동 추천(경일님)
-        </div>
-        <div class="section">
-            요리 추천(이수님)
-        </div>
+    <div id="fullpage" >
+        <div class="section info-area" >
+            <div class="container">
+                    <div class="info-text-area ">
+                        <h1>통증 부위를 입력해보세요</h1>
+                        <h4>다양한 운동과 요리를 추천해드립니다!! <br>건강한 개발생활을 도와드립니다지금 시작해보세요!!</h4>
+                    </div>
+
+                    <div class="info-area-form">
+                        <form action="">
+                            <fieldset class="body-check">
+                                <legend>현재 몸상태를 알려주세요!!</legend>
+                            
+                                <div>
+                                <input type="checkbox" id="t-neck" name="t-neck"  />
+                                <label for="t-neck">거북목</label>
+                                </div>
+                            
+                                <div>
+                                <input type="checkbox" id="p-neck" name="p-neck" />
+                                <label for="p-neck">일자목</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="neck-disc" name="neck-disc" />
+                                <label for="neck-disc">목디스크</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="back-disc" name="back-disc" />
+                                <label for="back-disc">허리디스크</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="r-shoulder" name="r-shoulder" />
+                                <label for="r-shoulder">라운드숄더</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="curved-back" name="curved-back" />
+                                    <label for="curved-back">척추측만</label>
+                                </div>
+
+                                <input type="submit" name="제출하기">
+                            </fieldset>
+                            
+                        </form>
+
+                        <form action="">
+                            <fieldset class="info-area-fieldset">
+                                <legend>좋아하는 음식을 선택하세요</legend>
+                            
+                                <div>
+                                <input type="checkbox" id="t-neck" name="t-neck"  />
+                                <label for="t-neck">t-neck</label>
+                                </div>
+                            
+                                <div>
+                                <input type="checkbox" id="p-neck" name="p-neck" />
+                                <label for="p-neck">일자목</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="neck-disc" name="neck-disc" value="neck" />
+                                <label for="neck-disc">목디스크</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="back-disc" name="back-disc" />
+                                <label for="back-disc">허리디스크</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="r-shoulder" name="r-shoulder" />
+                                <label for="r-shoulder">라운드숄더</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="curved-back" name="curved-back" />
+                                    <label for="curved-back">척추측만</label>
+                                </div>
+                                <input type="submit" name="제출하기">
+                            </fieldset>
+                        </form>
+
+                        <form action="">
+                            <fieldset class="body-check">
+                                <legend>현재 몸상태를 알려주세요!!</legend>
+                            
+                                <div>
+                                <input type="checkbox" id="t-neck" name="t-neck"  />
+                                <label for="t-neck">거북목</label>
+                                </div>
+                            
+                                <div>
+                                <input type="checkbox" id="p-neck" name="p-neck" />
+                                <label for="p-neck">일자목</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="neck-disc" name="neck-disc" />
+                                <label for="neck-disc">목디스크</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="back-disc" name="back-disc" />
+                                <label for="back-disc">허리디스크</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="r-shoulder" name="r-shoulder" />
+                                <label for="r-shoulder">라운드숄더</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="curved-back" name="curved-back" />
+                                    <label for="curved-back">척추측만</label>
+                                </div>
+                                <input type="submit" name="제출하기">
+                            </fieldset>
+                            
+                        </form>
+                        
+                    </div>
+                    <!-- <div class="info-input-box">
+                        <select name="time">
+                            <option value="morning">Morning</option>
+                            <option value="afternoon">Afernoon</option>
+                            <option value="night">Night</option>
+                        </select>
+                        <section class="input-area">
+                            <input type="text" id="input-tap" placeholder="현재 나의 체형">
+                            <button id="add-button" class="add-button" disabled >
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </section>  <section class="input-area">
+                            <input type="text" id="input-tap" placeholder="할일을 입력하세요!">
+                            <button id="add-button" class="add-button" disabled >
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </section>  <section class="input-area">
+                            <input type="text" id="input-tap" placeholder="할일을 입력하세요!">
+                            <button id="add-button" class="add-button" disabled >
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </section>
+                    </div> -->
+
+
+                </div>
+            </div>
         
-        <!-- 운동별 칼로리 영역-미나 -->
-        <div class="section">
-            <h1>미나 테스트!!!!!!!!</h1>
-        </div>
+
+
+            <div class="section" style="background-color: skyblue;">운동 추천</div>
+
+
+            <div class="section" style="background-color: tan;">요리 추천</div>
+
+
+            <div class="section" style="background-color: slategray;">칼로리 소모</div>
+
+            
+            <div>testestg</div>
+
         
-        <div>testestg</div>
     </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"></script>
+    <script src="https://kit.fontawesome.com/a86c609f7e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="mypage.js"></script>
 </body>
 </html>
