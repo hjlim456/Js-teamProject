@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "Pretendard-Regular";
     src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
@@ -157,3 +158,96 @@
       margin: 2em;
     }
   }
+
+.info-area{
+    background-color: #fc6c7c;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+
+}
+
+
+
+.info-text-area{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.info-text-area h1{
+    font-size: 5em;
+    margin: 0;
+}
+.info-text-area h4{
+    margin-top: 1em;
+}
+
+.info-area-form{
+    margin-top: 3em;
+}
+
+.info-area-form form fieldset{
+    border: 1px solid black;
+    display: inline-block;
+    padding: 1em;
+
+    background-color: #c366eb;
+    color: white;
+}
+.info-area-form form {
+    margin-left: 3em;
+}
+
+
+.info-area-form{
+    display: flex;
+}
+
+/* .info-input-box{
+    margin-left: 6em;
+    width: calc(50% - 54px);
+    display: inline-block;
+    background-color: #fc6c7c;
+}
+
+
+.input-area>input{
+    margin-right: 0.5rem;
+    margin-top: 3rem;
+    width: 80%;
+
+    border: none;
+    border-bottom: 3px solid lightgray;
+
+}
+.input-area>input:focus{
+    outline: none;
+    border-bottom: 3px solid rgb(235, 60, 241);
+
+}
+  
+
+.add-button{
+    background-color: rgb(235, 60, 241);
+    border-radius: 8px;
+    border-style: solid;
+    border-color: rgb(235, 60, 241);
+    display: flex;
+    align-items: center;
+
+    height: 30px;
+    align-self: end;
+}
+.add-button>i{
+    padding-top: 1px;
+    color:   #F0F0F0;
+    
+}
+.add-button:disabled{
+    background-color: #b7b5b5;
+    border-color: #b7b5b5;
+}
+.add-button:disabled>i{
+    color: #F0F0F0;
+} */
+
