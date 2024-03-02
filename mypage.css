@@ -280,16 +280,20 @@
     padding: 10px 20px;
     cursor: pointer;
   }
-
-    .body-check-button-clicked{
-        background-color: red;
-        color: white;
-        border: 1px solid red;
-    }
+.body-check-area button:hover{
+    background-color: rgb(119, 241, 119);
+    color: white;
+    border: 1px solid rgb(119, 241, 119);
+    transition: 0.4s;
+}
+.body-check-area button:focus{
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
 
 
 .like-exercise-check-area button{
-
     background-color: gainsboro;
     color: black;
     border: 1px solid gainsboro;
@@ -297,11 +301,17 @@
     padding: 10px 20px;
     cursor: pointer;
 }
-    .like-exercise-check-button-clicked{
-        background-color: green;
+    .like-exercise-check-area button:hover{
+        background-color: rgb(119, 241, 119);
         color: white;
-        border: 1px solid green;
+        border: 1px solid rgb(119, 241, 119);
     }
+    .like-exercise-check-area button:focus{
+        background-color: rgb(208, 156, 24);
+        color: white;
+        border: 1px solid rgb(208, 156, 24);
+    }
+
 
 
 .like-food-check-area button{
@@ -313,11 +323,18 @@
     padding: 10px 20px;
     cursor: pointer;
 }
-    .like-food-check-button-clicked{
-        background-color: blue;
-        color: white;
-        border: 1px solid blue;
-    }
+.like-food-check-area button:hover{
+    background-color: rgb(119, 241, 119);
+    color: white;
+    border: 1px solid rgb(119, 241, 119);
+   
+}
+.like-food-check-area button:focus{
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+}
+
 /* ==========효준 코드 끝 */
 
 
