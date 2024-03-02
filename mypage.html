@@ -49,11 +49,13 @@
                                     <label for="curved-back">척추측만</label>
                                 </div>
 
-                                <input type="submit" name="제출하기">
+                                <!-- <input type="submit" name="제출하기"> -->
+                                <!-- form에서 함수통제하는 방법 검토 -->
+                                
                             </fieldset>
                             
                         </form>
-
+                        <button onclick="makeAjaxCall('stretching', '', 'beginner')">제출하기</button>
                         <form action="">
                             <fieldset class="info-area-fieldset">
                                 <legend>좋아하는 음식을 선택하세요</legend>
@@ -149,7 +151,15 @@
 
                 </div>
             </div>
-            <div class="section" style="background-color: skyblue;">운동 추천</div>
+            <div class="section" style="background-color: skyblue;">
+                <!-- 운동 추천 정경일 -->
+                <div class="row">  
+                    <div class="col-md-2 col-sm-12 howto">최적 운동방법</div>
+                    <div id="result" class="col-md-10 col-sm-12"></div>
+            </div>            
+
+            
+            </div>
 
 
             <div class="section" style="background-color: tan;">요리 추천</div>
