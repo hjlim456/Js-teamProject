@@ -6,6 +6,8 @@ new fullpage('#fullpage', {
     }
 });
 
+
+
 // 운동별 칼로리 영역-미나
 // 칼로리 api 불러와서 클릭이벤트
 $(document).ready(function () {
@@ -108,6 +110,8 @@ let url = new URL(`https://api.edamam.com/api/recipes/v2?type=public&q=tomato&ap
 let recipeList=[];
 let recipeContent=[];
 let inputRecipe=document.getElementById("recipe-search-input")
+let recipeSearchButton = document.querySelectorAll(".like-food-check-area button")
+recipeSearchButton.forEach((recipeSearchButton=>recipeSearchButton.addEventListener("click",(event)=>getKeybutton(event))))
 
 const enter=()=>{
     switch(event.key){
@@ -137,6 +141,14 @@ const getRecipe=async()=>{
     }
 }
 getRecipe();
+
+const getKeybutton=(event)=>{
+  const checkKeyword=event.target.textContent
+  console.log(checkKeyword)
+  url = new URL(`https://api.edamam.com/api/recipes/v2?type=public&q=${checkKeyword}&app_id=${appId}&app_key=${recipeId}&random=true&field=label&field=calories&field=image&field=totalNutrients&field=ingredientLines`)
+  getRecipe();
+}
+
 
 const getSearchRecipe=async()=>{
     let recipeKeyword=inputRecipe.value;

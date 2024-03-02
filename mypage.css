@@ -227,7 +227,6 @@
     background-color: lightblue;
     display: flex;
     flex-direction: row;
-    margin-bottom: 1.5rem;
 
 }
 
@@ -274,9 +273,9 @@
 /* ----버튼 css */
 
 .body-check-area button{
-    background-color: white;
+    background-color: gainsboro;
     color: black;
-    border: 1px solid white;
+    border: 1px solid gainsboro;
     border-radius: 150px;
     padding: 10px 20px;
     cursor: pointer;
@@ -291,9 +290,9 @@
 
 .like-exercise-check-area button{
 
-    background-color: white;
+    background-color: gainsboro;
     color: black;
-    border: 1px solid white;
+    border: 1px solid gainsboro;
     border-radius: 150px;
     padding: 10px 20px;
     cursor: pointer;
@@ -307,9 +306,9 @@
 
 .like-food-check-area button{
 
-    background-color: white;
+    background-color: gainsboro;
     color: black;
-    border: 1px solid white;
+    border: 1px solid gainsboro;
     border-radius: 150px;
     padding: 10px 20px;
     cursor: pointer;
@@ -373,7 +372,6 @@
 
 /* --------recipe style 이수---------*/
 .recipe-area{
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -408,8 +406,12 @@
 
 .recipecard-area{
   overflow-x: scroll;
-  scrollbar-width: none;
   position: relative;
+}
+
+.recipecard-area ::-webkit-scrollbar-horizontal {
+  height: 12px; /* 스크롤 바의 높이 */
+  background-color: #f0f0f0; /* 스크롤 바의 배경색 */
 }
 
 .arrow-button{
@@ -525,6 +527,7 @@
 
 .recipe-alltext-title{
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .recipe-title{
