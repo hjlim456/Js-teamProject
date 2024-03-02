@@ -186,10 +186,6 @@ const clickRecipe=(event)=>{
     document.getElementById("click-recipe-area").innerHTML=clickRecipeHTML
 }
 
-const clickRender=()=>{
-    //const clickRecipeHTML=
-}
-
 const errorRender=(errorMessage)=>{
     const errorHTML=`<div class="alert alert-danger" role="alert">
     ${errorMessage}
