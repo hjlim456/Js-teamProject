@@ -301,6 +301,98 @@
   text-overflow: ellipsis;    
 }
 
+.recipe-blue{
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0554f6;
+}
+
+.recipe-smalltext{
+  font-size: 0.8rem;
+}
+
+.recipe-ingredient{
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.font-boldweight{
+  font-weight: 600;
+}
+
+.nutri-font{
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media screen and (max-width:48rem){
+  .recipe{
+      width: 25em;
+  }
+
+  .recipetext-area{
+      width: 25em;
+  }
+
+  .recipe-alltext{
+      overflow: scroll;
+      scrollbar-width: none;
+  }
+
+  .recipe-ingredient{
+      overflow: visible;
+  }
+
+  .nutri-font{
+      font-size: 0.7rem;
+  }
+
+  .recipe-research button{
+      margin: 0.5rem;
+      width: 20rem;
+  }
+}
+/* recipe style end */
+
+
+/* 통증별 최적 운동방법 __ 정경일 */
+
+.howto {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #007bff;
+  padding: 10px;
+  padding-top: 150px;
+  border-radius: 5px;
+  box-shadow: 0 rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+  text-align: center;
+  align-items: center;
+}
+
+.linemenuview {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.linemenu {
+  margin-right: 10px;
+  white-space: nowrap;
+  background-color: #7d9cbb;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  min-width: 80px;
+  max-width: 150px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;    
+}
+
 .exec {
   background-color: #ffffff;
   border-radius: 8px;
