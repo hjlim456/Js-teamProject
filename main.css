@@ -5,22 +5,61 @@
     font-style: normal;
 }
 
-html{
-    width : 80%;
-}
+body {
+    font-family: "Pretendard-Regular";
+    margin: 0;
+    padding: 0;
+  }
 
-header{
-    margin-top : 10px;
-    display : flex;
+ /* 네브바 스타일 */
+ .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  
+  .nav-box {
+    width: 30em;
+    height: 4.2em;
+    border-radius: 30em;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    gap: 2em;
+  }
+  
+  .nav-item {
+    gap: 15em;
+  }
+  
+  .nav-link {
+    transition: all 0.5s;
+  }
+  
+  .nav-link:hover {
+    font-weight: 900;
+    color: #0554f6;
+  }
+  
+  .my-icon {
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    background-color: #0554f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-}
+  @media screen and (max-width: 63rem) {
+    body {
+        padding: 2em;
+      }
 
-.menus{
-    display : flex;
-    text-align : center;
-    height : 40px;
-    width : 400px;
-    border-radius : 20px;
-    border : 1px solid #ccc;
-    padding: 5px
-}
+    .navbar{
+      position: sticky;
+      background-color: white;
+      top: 0;
+    }
+  }

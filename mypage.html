@@ -10,6 +10,23 @@
     <link rel="stylesheet" href="mypage.css">
 </head>
 <body>
+    <!-- 네브바 -->
+    <header>
+        <nav class="navbar fixed-top bg-transparent menus">
+            <div class="container">
+                <a class="navbar-brand" href="./main.html">개운하다</a>
+                <div class="d-flex nav-box">
+                    <div class="nav-item"><a class="nav-link" href="#ache-section">통증 개선</a></div>
+                    <div class="nav-item"><a class="nav-link" href="#recipe-section">레시피 추천</a></div>
+                    <div class="nav-item"><a class="nav-link" href="#calories-section">운동 칼로리</a></div>
+                    <div class="nav-item my-icon"><a class="nav-link" href="./mypage.html">
+                            <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i>
+                        </a></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <div id="fullpage" >
         <div class="section info-area" >
             <div class="container">
@@ -149,13 +166,13 @@
 
                 </div>
             </div>
-            <div class="section" style="background-color: skyblue;">운동 추천</div>
+            <div class="section" data-anchor="ache-section" style="background-color: skyblue;">운동 추천</div>
 
 
-            <div class="section" style="background-color: tan;">요리 추천</div>
+            <div class="section" data-anchor="recipe-section" style="background-color: tan;">요리 추천</div>
 
         <!-- 운동별 칼로리 영역-미나 -->
-        <div class="section">
+        <div class="section" data-anchor="calories-section">
             <div class="exercise-calories-wrap">
 
                 <!-- 타이틀 -->
