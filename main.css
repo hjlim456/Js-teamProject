@@ -87,26 +87,19 @@ a {
     max-width : 1080px;
 }
 .texts{
-  width : 65%;
+  width : 60%;
+}
+.imgs{
+  width : 40%;
 }
 
-/* .imgs{
-  width : 40%;
-} */
-
 img{
-  width : 25em;
   max-height : 80%;
   border-radius : 1.5em;
   box-shadow : 10px 10px 30px lightslategray;
 }
 
 .carousel-item img {
-  max-width: 100%; /* Ensures image does not exceed its container */
-  height: auto; /* Adjusts height while maintaining aspect ratio */
-}
-
-#carouselExampleIndicators {
-  width: 100%; /* Adjust the width as needed */
-  max-height: 600px; /* Adjust the height as needed */
+  width: 100%;
+  height: 500px; /* Or whatever height you prefer */
 }
