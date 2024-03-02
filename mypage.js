@@ -50,7 +50,9 @@ document.getElementById('clickgoto').addEventListener('click', () => {
   window.location.href = "https://exec2024.netlify.app/";
 });
 
-
+document.getElementById('result').addEventListener('click', () => {
+  window.location.href = "https://exec2024.netlify.app/";
+});
 
 
 // 운동별 칼로리 영역-미나
