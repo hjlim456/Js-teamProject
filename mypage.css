@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 
 @font-face {
     font-family: "Pretendard-Regular";
@@ -266,7 +264,7 @@
   box-shadow: 0 rgba(0,0,0,0.1);
   margin-bottom: 15px;
   text-align: center;
-  
+  align-items: center;
 }
 
 .linemenuview {
@@ -297,4 +295,7 @@
   margin-bottom: 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
->>>>>>> Stashed changes
+.execmain{
+  margin-left: 10em;
+  width:80%;
+}

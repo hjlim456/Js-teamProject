@@ -1,4 +1,3 @@
-
 new fullpage('#fullpage', {
   autoScrolling: true,
   scrollHorizontally: true,
@@ -31,7 +30,7 @@ function makeAjaxCall(type, muscle, difficulty) {
 function updateResultOnPage(results) {
 
   myHtml='';
-console.log("aaa", results[0])
+
       const result = results[0];
       myHtml += `<div class="exec">
       <div class="linemenuview"><div class="linemenu">난이도</div><div name="difficulty">${result.difficulty}</div></div>
@@ -46,6 +45,10 @@ console.log("aaa", results[0])
   document.getElementById('result').innerHTML = myHtml;
   
 }
+
+document.getElementById('clickgoto').addEventListener('click', () => {
+  window.location.href = "https://exec2024.netlify.app/";
+});
 
 
 
@@ -141,4 +144,3 @@ searchButton.addEventListener("click", function () {
   }
 });
 
->>>>>>> Stashed changes
