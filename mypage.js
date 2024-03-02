@@ -241,9 +241,9 @@ function updateResultOnPage(results) {
 }
 
 document.getElementById('clickgoto').addEventListener('click', () => {
-  window.location.href = "https://exec2024.netlify.app/?name=거북목";
+  window.location.href = "exercise.html";
 });
 
 document.getElementById('result').addEventListener('click', () => {
-  window.location.href = "https://exec2024.netlify.app/?name=거북목";
+  window.location.href = "exercise.html";
 });

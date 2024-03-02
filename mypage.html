@@ -9,12 +9,12 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="mypage.css">
     <!-- 경일님  -->
-    <script>
+    <!-- <script>
         window.onload = function(){
             makeAjaxCall('stretching', '', 'beginner');
         
         }
-    </script>
+    </script> -->
 
 </head>
 <body>
@@ -80,16 +80,16 @@
                     <div class="self-check-area">
                         <div class="body-check-area">
                             <h4>현재 몸상태를 알려주세요!!</h4>
-                            <button id="button1">거북목</button>
-                            <button id="button2">일자목</button>
-                            <button id="button3">목디스크</button>
-                            <button id="button4">허리디스크</button>
-                            
+
+                            <button id="button1" onclick="makeAjaxCall('stretching', 'neck', '')">거북목</button>
+                            <button id="button3" onclick="makeAjaxCall('strength', 'neck', '')">목디스크</button>
+                            <button id="button3" onclick="makeAjaxCall('strength', 'lower_back', '')">허리디스크</button>
+                            <button id="button4" onclick="makeAjaxCall('strength', 'traps', '')">라운드숄더</button>
                         </div>
 
                         <div class="like-exercise-check-area">
                             <h4>좋아하는 운동을 선택하세요</h4>
-                            <button id="button7">스쿼트</button>
+                            <button id="button7">swim</button>
                             <button id="button8">운동1</button>
                             <button id="button9">운동2</button>
                             <button id="button10">운동3</button>
@@ -97,6 +97,7 @@
                         </div>
 
                         <div class="like-food-check-area">
+
                             <h4>오늘의 요리 재료를 알려주세요!</h4>
                             <button>🍅tomato</button>
                             <button>🥬kale</button>
