@@ -34,9 +34,24 @@ header{
     /* padding: 5px */
 }
 
-.page1{
-    padding : 90px 139px;
-    display: flex;
+.plz{
+    padding : 90px 150px !important;
+    display: flex !important;
+    justify-content : space-between !important;
+    align-items: center !important;
+    margin : 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color : black;
+}
+
+footer{
+    display : flex;
     justify-content : space-between;
-    align-items: center;
+    align-items : center;
+    padding : 50 50;
+    margin : 0 auto;
+    max-width : 1080px;
 }
