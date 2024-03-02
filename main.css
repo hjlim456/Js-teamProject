@@ -66,9 +66,9 @@ body {
   }
 
 .plz{
-    padding : 90px 150px !important;
+    /* padding : 90px 150px !important; */
     display: flex !important;
-    justify-content : space-between !important;
+    /* justify-content : space-between !important; */
     align-items: center !important;
     margin : 0 auto;
 }
@@ -80,9 +80,22 @@ a {
 
 footer{
     display : flex;
-    justify-content : space-between;
+    /* justify-content : space-between; */
     align-items : center;
     padding : 50 50;
     margin : 0 auto;
     max-width : 1080px;
+}
+.texts{
+  width : 65%;
+}
+
+/* .imgs{
+  width : 40%;
+} */
+
+img{
+  width : 25em;
+  border-radius : 1.5em;
+  box-shadow : 10px 10px 30px lightslategray;
 }
