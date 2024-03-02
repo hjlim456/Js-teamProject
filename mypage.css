@@ -280,16 +280,20 @@
     padding: 10px 20px;
     cursor: pointer;
   }
-
-    .body-check-button-clicked{
-        background-color: red;
-        color: white;
-        border: 1px solid red;
-    }
+.body-check-area button:hover{
+    background-color: rgb(119, 241, 119);
+    color: white;
+    border: 1px solid rgb(119, 241, 119);
+    transition: 0.4s;
+}
+.body-check-area button:focus{
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
 
 
 .like-exercise-check-area button{
-
     background-color: gainsboro;
     color: black;
     border: 1px solid gainsboro;
@@ -297,11 +301,17 @@
     padding: 10px 20px;
     cursor: pointer;
 }
-    .like-exercise-check-button-clicked{
-        background-color: green;
+    .like-exercise-check-area button:hover{
+        background-color: rgb(119, 241, 119);
         color: white;
-        border: 1px solid green;
+        border: 1px solid rgb(119, 241, 119);
     }
+    .like-exercise-check-area button:focus{
+        background-color: rgb(208, 156, 24);
+        color: white;
+        border: 1px solid rgb(208, 156, 24);
+    }
+
 
 
 .like-food-check-area button{
@@ -313,11 +323,18 @@
     padding: 10px 20px;
     cursor: pointer;
 }
-    .like-food-check-button-clicked{
-        background-color: blue;
-        color: white;
-        border: 1px solid blue;
-    }
+.like-food-check-area button:hover{
+    background-color: rgb(119, 241, 119);
+    color: white;
+    border: 1px solid rgb(119, 241, 119);
+   
+}
+.like-food-check-area button:focus{
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+}
+
 /* ==========효준 코드 끝 */
 
 
@@ -407,11 +424,7 @@
 .recipecard-area{
   overflow-x: scroll;
   position: relative;
-}
-
-.recipecard-area ::-webkit-scrollbar-horizontal {
-  height: 12px; /* 스크롤 바의 높이 */
-  background-color: #f0f0f0; /* 스크롤 바의 배경색 */
+  padding-bottom: 0.5rem;
 }
 
 .arrow-button{
@@ -438,7 +451,7 @@
   height: 3rem;
   border: none;
   border-radius: 1rem;    
-  text-align: center;
+  padding-left: 1rem;
 }
 
 .recipe-research button{
@@ -546,8 +559,7 @@
 }
 
 .recipe-ingredient{
-  overflow: scroll;
-  scrollbar-width: none;
+  overflow-y: scroll;
 }
 
 .font-boldweight{
@@ -559,6 +571,25 @@
   font-size: 0.9rem;
   text-align: center;
 }
+
+::-webkit-scrollbar{
+  background-color: #f9fafb;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.recipe-ingredient::-webkit-scrollbar{
+  background-color: white;
+}
+
+.recipe-ingredient::-webkit-scrollbar-thumb{
+  background-color: #f7f6f6;
+  border-radius: 1rem;
+}
+
 
 @media screen and (max-width:48rem){
   .recipe{
