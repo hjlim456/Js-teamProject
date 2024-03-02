@@ -5,22 +5,38 @@
     font-style: normal;
 }
 
-html{
-    width : 80%;
+header{
+    position:sticky;
+    padding-top : 20px;
+    display : flex;
+    background-color:#f9fafb;
+    user-select:Auto;
 }
 
-header{
-    margin-top : 10px;
-    display : flex;
-
+.logo{
+    width : 30%;
+    /* 위아래로 가운데 */
+    display:flex;
+    align-items:center; 
+    justify-content:center;
 }
 
 .menus{
-    display : flex;
-    text-align : center;
+    /* 일정 수치 이상으로 줄어들면 햄버거 메뉴 생겨야함
+    그리고 눌렀을 때는 그 섹션으로 넘어가도록? */
+    width : 500px;
     height : 40px;
-    width : 400px;
     border-radius : 20px;
-    border : 1px solid #ccc;
-    padding: 5px
+    background-color: white;
+    display : flex;
+    justify-content : space-between;
+    align-items:center;
+    /* padding: 5px */
+}
+
+.page1{
+    padding : 90px 139px;
+    display: flex;
+    justify-content : space-between;
+    align-items: center;
 }
