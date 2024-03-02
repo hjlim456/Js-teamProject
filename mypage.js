@@ -97,3 +97,93 @@ $(document).ready(function () {
     }
   });
   
+
+//recipe Area - 이수
+
+const appId=`35ed5796`
+const recipeId=`fc26eb2e099311839055d866ac9db908`
+//new URL(`https://api.edamam.com/api/recipes/v2?type=public&q=tomato&app_id=${appId}&app_key=${recipeId}&random=true&field=label&field=calories&field=image&field=totalNutrients`)
+//let url = new URL(`https://api.edamam.com/api/recipes/v2?type=public&app_id=${appId}&app_key=${recipeId}`)
+let url = new URL(`https://api.edamam.com/api/recipes/v2?type=public&q=tomato&app_id=${appId}&app_key=${recipeId}&random=true&field=label&field=calories&field=image&field=totalNutrients&field=ingredientLines`)
+let recipeList=[];
+let recipeContent=[];
+let inputRecipe=document.getElementById("recipe-search-input")
+
+const enter=()=>{
+    switch(event.key){
+        case "Enter": getSearchRecipe();
+    }   
+}
+
+const getRecipe=async()=>{
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        if(response.status===200){
+            if(data.hits.length===0){
+                throw new Error("No result for this search");
+            }
+            recipeList=data.hits;
+            recipeContent=recipeList.map((item)=>{
+            return item.recipe
+            })
+            render();
+        }else{
+            throw new Error(data.message)
+        }
+    }catch(error){
+        errorRender(error.message)
+    }
+}
+getRecipe();
+
+const getSearchRecipe=async()=>{
+    let recipeKeyword=inputRecipe.value;
+    url = new URL(`https://api.edamam.com/api/recipes/v2?type=public&q=${recipeKeyword}&app_id=${appId}&app_key=${recipeId}&random=true&field=label&field=calories&field=image&field=totalNutrients&field=ingredientLines`)
+    getRecipe();
+    inputRecipe.value="";
+};
+
+const render=()=>{
+    const recipeCardHTML=recipeContent.map(item=>`<button class="recipe-card" id="recipe-button" onclick="clickRecipe(event)">
+    <div class="recipe-card-image"><img src="${item.image}"></div>
+    <div><h3>${item.label}</h3></div>
+</button>`).join('');
+
+    document.getElementById("view-recipecard").innerHTML=recipeCardHTML
+    let recipeButton = document.createElement("recipe-button")
+}
+//<p>${parseInt(item.calories)} calories</p>
+
+const clickRecipe=(event)=>{
+    console.log(event.target.offsetParent.offsetParent.innerText);
+    let recipeText = event.target.offsetParent.offsetParent.innerText;
+    let clickRecipe=recipeContent.filter((item)=>{
+        return item.label==`${recipeText}`
+    })
+    console.log("ohmy",clickRecipe)
+    const clickRecipeHTML=clickRecipe.map(item=>`<div class="recipe-alltext">
+   <div class="recipe-alltext-img"><img src="${item.image}"></div>
+   <div class="recipe-alltext-title"><p><span class="recipe-title">${item.label}</span><br>
+   <span class="recipe-blue">${parseInt(item.calories)}</span> <span class="recipe-smalltext">CALORIES</span> | <span class="recipe-blue">${item.ingredientLines.length}</span> <span class="recipe-smalltext">INGREDIENTS</span></p></div>
+   <p class="font-boldweight">INGREDIENTS</p><div class="recipe-ingredient"><p> ${item.ingredientLines.join('<br></br>')}</p></div>
+   <p class="nutri-font"><span class="recipe-smalltext">🔴</span>PROTEIN &nbsp;<span class="recipe-blue">${parseInt(item.totalNutrients.PROCNT.quantity)}</span>${item.totalNutrients.PROCNT.unit} | 
+   <span class="recipe-smalltext">🟡</span>CARB &nbsp;<span class="recipe-blue">${parseInt(item.totalNutrients.CHOCDF.quantity)}</span>${item.totalNutrients.CHOCDF.unit} | 
+   <span class="recipe-smalltext">🟢</span>FAT &nbsp;<span class="recipe-blue">${parseInt(item.totalNutrients.FAT.quantity)}</span>${item.totalNutrients.FAT.unit}</p>`)
+
+    document.getElementById("click-recipe-area").innerHTML=clickRecipeHTML
+}
+
+const clickRender=()=>{
+    //const clickRecipeHTML=
+}
+
+const errorRender=(errorMessage)=>{
+    const errorHTML=`<div class="alert alert-danger" role="alert">
+    ${errorMessage}
+  </div>`;
+  document.getElementById("view-recipecard").innerHTML=errorHTML
+}
+
+//recipe Area - 이수
