@@ -6,6 +6,7 @@
 }
 
 header{
+    position:sticky;
     padding-top : 20px;
     display : flex;
     background-color:#f9fafb;
@@ -25,19 +26,17 @@ header{
     그리고 눌렀을 때는 그 섹션으로 넘어가도록? */
     width : 500px;
     height : 40px;
+    border-radius : 20px;
     background-color: white;
     display : flex;
     justify-content : space-between;
     align-items:center;
-    border-radius : 20px;
-    /* border : 1px solid #ccc; */
-    padding: 5px
+    /* padding: 5px */
 }
 
-.menus div{
-    display:flex;
-    /* align-items:center;
-    justify-content:center; */
-    padding : 1em;
-    cursor:pointer;
+.page1{
+    padding : 90px 139px;
+    display: flex;
+    justify-content : space-between;
+    align-items: center;
 }
