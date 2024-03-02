@@ -5,22 +5,97 @@
     font-style: normal;
 }
 
-html{
-    width : 80%;
+
+body {
+    font-family: "Pretendard-Regular";
+    margin: 0;
+    padding: 0;
+  }
+
+ /* 네브바 스타일 */
+ .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  
+  .nav-box {
+    width: 30em;
+    height: 4.2em;
+    border-radius: 30em;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    gap: 2em;
+  }
+  
+  .nav-item {
+    gap: 15em;
+  }
+  
+  .nav-link {
+    transition: all 0.5s;
+  }
+  
+  .nav-link:hover {
+    font-weight: 900;
+    color: #0554f6;
+  }
+  
+  .my-icon {
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    background-color: #0554f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 63rem) {
+    body {
+        padding: 2em;
+      }
+
+    .navbar{
+      position: sticky;
+      background-color: white;
+      top: 0;
+    }
+  }
+
+.plz{
+    /* padding : 90px 150px !important; */
+    display: flex !important;
+    /* justify-content : space-between !important; */
+    align-items: center !important;
+    margin : 0 auto;
 }
 
-header{
-    margin-top : 10px;
-    display : flex;
-
+a {
+    text-decoration: none;
+    color : black;
 }
 
-.menus{
+footer{
     display : flex;
-    text-align : center;
-    height : 40px;
-    width : 400px;
-    border-radius : 20px;
-    border : 1px solid #ccc;
-    padding: 5px
+    /* justify-content : space-between; */
+    align-items : center;
+    padding : 50 50;
+    margin : 0 auto;
+    max-width : 1080px;
+}
+.texts{
+  width : 65%;
+}
+
+/* .imgs{
+  width : 40%;
+} */
+
+img{
+  width : 25em;
+  border-radius : 1.5em;
+  box-shadow : 10px 10px 30px lightslategray;
 }
