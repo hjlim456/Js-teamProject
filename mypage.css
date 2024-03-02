@@ -227,7 +227,6 @@
     background-color: lightblue;
     display: flex;
     flex-direction: row;
-    margin-bottom: 1.5rem;
 
 }
 
@@ -274,9 +273,9 @@
 /* ----버튼 css */
 
 .body-check-area button{
-    background-color: white;
+    background-color: gainsboro;
     color: black;
-    border: 1px solid white;
+    border: 1px solid gainsboro;
     border-radius: 150px;
     padding: 10px 20px;
     cursor: pointer;
@@ -291,9 +290,9 @@
 
 .like-exercise-check-area button{
 
-    background-color: white;
+    background-color: gainsboro;
     color: black;
-    border: 1px solid white;
+    border: 1px solid gainsboro;
     border-radius: 150px;
     padding: 10px 20px;
     cursor: pointer;
@@ -307,9 +306,9 @@
 
 .like-food-check-area button{
 
-    background-color: white;
+    background-color: gainsboro;
     color: black;
-    border: 1px solid white;
+    border: 1px solid gainsboro;
     border-radius: 150px;
     padding: 10px 20px;
     cursor: pointer;
