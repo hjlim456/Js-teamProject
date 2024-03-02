@@ -10,6 +10,7 @@ new fullpage('#fullpage', {
 
 // 운동별 칼로리 영역-미나
 // 칼로리 api 불러와서 클릭이벤트
+
 $(document).ready(function () {
     $("#exerciseSearch").click(function () {
       $.ajax({
@@ -113,10 +114,10 @@ let inputRecipe=document.getElementById("recipe-search-input")
 let recipeSearchButton = document.querySelectorAll(".like-food-check-area button")
 recipeSearchButton.forEach((recipeSearchButton=>recipeSearchButton.addEventListener("click",(event)=>getKeybutton(event))))
 
-const enter=()=>{
-    switch(event.key){
-        case "Enter": getSearchRecipe();
-    }   
+const sportSearchKey=()=>{
+  switch(event.key){
+    case "Enter": getSearchRecipe();
+  }   
 }
 
 const getRecipe=async()=>{
@@ -241,9 +242,9 @@ function updateResultOnPage(results) {
 }
 
 document.getElementById('clickgoto').addEventListener('click', () => {
-  window.location.href = "https://exec2024.netlify.app/?name=거북목";
+  window.location.href = "exercise.html";
 });
 
 document.getElementById('result').addEventListener('click', () => {
-  window.location.href = "https://exec2024.netlify.app/?name=거북목";
+  window.location.href = "exercise.html";
 });

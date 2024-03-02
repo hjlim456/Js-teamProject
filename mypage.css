@@ -424,11 +424,7 @@
 .recipecard-area{
   overflow-x: scroll;
   position: relative;
-}
-
-.recipecard-area ::-webkit-scrollbar-horizontal {
-  height: 12px; /* 스크롤 바의 높이 */
-  background-color: #f0f0f0; /* 스크롤 바의 배경색 */
+  padding-bottom: 0.5rem;
 }
 
 .arrow-button{
@@ -455,7 +451,7 @@
   height: 3rem;
   border: none;
   border-radius: 1rem;    
-  text-align: center;
+  padding-left: 1rem;
 }
 
 .recipe-research button{
@@ -563,8 +559,7 @@
 }
 
 .recipe-ingredient{
-  overflow: scroll;
-  scrollbar-width: none;
+  overflow-y: scroll;
 }
 
 .font-boldweight{
@@ -576,6 +571,25 @@
   font-size: 0.9rem;
   text-align: center;
 }
+
+::-webkit-scrollbar{
+  background-color: #f9fafb;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.recipe-ingredient::-webkit-scrollbar{
+  background-color: white;
+}
+
+.recipe-ingredient::-webkit-scrollbar-thumb{
+  background-color: #f7f6f6;
+  border-radius: 1rem;
+}
+
 
 @media screen and (max-width:48rem){
   .recipe{
