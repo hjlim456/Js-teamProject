@@ -230,8 +230,6 @@
 
 }
 
-
-
 .info-text-area{
     display: flex;
     flex-direction: column;
@@ -249,33 +247,45 @@
     margin-top: 3em;
     display: flex;
     text-align: center;
-    flex-direction: column;
+}
+
+.self-check-area h4{
+  margin: 1rem;
+  margin-bottom: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .self-check-area div{
-    border: 1px solid black;
+    border-radius: 1rem;
     display: inline-block;
-    padding: 1em;
-
-    background-color: white;
+    margin: 0.5rem;
+    padding: 1.5rem 1rem;
+    width: 15rem;
+    background-color: #f9fafb;
     color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.self-check-area div button{
+  display: block;
+  margin: 0.25rem 0rem;
 }
 
 
 .name-height-weight-area{
     margin-top: 5em;
-
-    display: flex;
-    
+    display: flex;   
     justify-content: space-around;
 }
 
 /* ----버튼 css */
 
 .body-check-area button{
-    background-color: gainsboro;
+    background-color: white;
     color: black;
-    border: 1px solid gainsboro;
+    border: 1px solid white;
     border-radius: 150px;
     padding: 10px 20px;
     cursor: pointer;
@@ -294,9 +304,9 @@
 
 
 .like-exercise-check-area button{
-    background-color: gainsboro;
+    background-color: white;
     color: black;
-    border: 1px solid gainsboro;
+    border: 1px solid white;
     border-radius: 150px;
     padding: 10px 20px;
     cursor: pointer;
@@ -316,9 +326,9 @@
 
 .like-food-check-area button{
 
-    background-color: gainsboro;
+    background-color: white;
     color: black;
-    border: 1px solid gainsboro;
+    border: 1px solid white;
     border-radius: 150px;
     padding: 10px 20px;
     cursor: pointer;
@@ -333,6 +343,84 @@
     background-color: blue;
     color: white;
     border: 1px solid blue;
+}
+
+.plan-style{
+  background-color: #f9fafb;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 2.5rem 1rem 2.5rem 2.5rem;
+  height: 33.5rem;
+}
+
+.plan-input-area{
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.plan-line{
+  border-radius: 1rem;
+  margin: 0.25rem 0rem;
+  display: flex;
+  flex-direction: column;
+  max-height: 21rem;
+  overflow-y: scroll;
+}
+
+.plan-item{
+  background-color: white;
+  border-radius: 2rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.plan-item div{
+  padding: 0.25rem 0.5rem;
+}
+
+.plan-item div button{
+  margin-top: 0.3rem;
+}
+
+.plan-date{
+  width: 4rem;
+  margin: 0.5rem;
+}
+
+.plan-sport{
+  width: 8rem;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.plan-water{
+  width: 8rem;
+}
+
+#plan-sport-input{
+  width: 11rem;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+}
+
+#plan-water-input{
+  width: 11rem;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+}
+
+.name-add-button{
+  border: #0554f6;
+  border-radius: 1.5rem;
+  padding: 0.25rem 0.6rem;
+  background-color: #0554f6;
+  color: white;
 }
 
 /* ==========효준 코드 끝 */
