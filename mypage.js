@@ -187,3 +187,51 @@ const errorRender=(errorMessage)=>{
 }
 
 //recipe Area - 이수
+
+// 경일님
+
+let result;
+
+function makeAjaxCall(type, muscle, difficulty) {
+  $.ajax({
+      method: 'GET',
+      url: `https://api.api-ninjas.com/v1/exercises?type=${type}&muscle=${muscle}&difficulty=${difficulty}`,
+      headers: { 'X-Api-Key': '2zEcKZF8xR0B88lSXJRwzQ==nRJtVdNfV0FBKzUn'},
+      contentType: 'application/json',
+      success: function(result) {
+          console.log(result);
+          updateResultOnPage(result);  
+      },
+      error: function ajaxError(jqXHR) {
+          console.error('Error: ', jqXHR.responseText);
+      }
+  });
+}
+
+// 결과 데이터를 HTML에 업데이트하는 함수
+function updateResultOnPage(results) {
+
+  myHtml='';
+
+      const result = results[0];
+      myHtml += `<div class="exec">
+      <div class="linemenuview"><div class="linemenu">난이도</div><div name="difficulty">${result.difficulty}</div></div>
+      <div class="linemenuview"><div class="linemenu">장비</div><div name="equipment">${result.equipment}</div></div>
+      <div class="linemenuview"><div class="linemenu">방법</div><div name="instructions">${result.instructions}</div></div>
+      <div class="linemenuview"><div class="linemenu">활용근육</div><div name="muscle">${result.muscle}</div></div>
+      <div class="linemenuview"><div class="linemenu">운동명</div><div name="name">${result.name}</div></div>   
+      <div class="linemenuview"><div class="linemenu">타입</div><div name="type">${result.type}</div></div>                                            
+  </div>`;
+
+
+  document.getElementById('result').innerHTML = myHtml;
+  
+}
+
+document.getElementById('clickgoto').addEventListener('click', () => {
+  window.location.href = "https://exec2024.netlify.app/?name=거북목";
+});
+
+document.getElementById('result').addEventListener('click', () => {
+  window.location.href = "https://exec2024.netlify.app/?name=거북목";
+});

@@ -78,9 +78,9 @@ a {
     color : black;
 }
 
-footer{
+.footer{
     display : flex;
-    /* justify-content : space-between; */
+    justify-content : space-between;
     align-items : center;
     padding : 50 50;
     margin : 0 auto;
@@ -96,6 +96,17 @@ footer{
 
 img{
   width : 25em;
+  max-height : 80%;
   border-radius : 1.5em;
   box-shadow : 10px 10px 30px lightslategray;
+}
+
+.carousel-item img {
+  max-width: 100%; /* Ensures image does not exceed its container */
+  height: auto; /* Adjusts height while maintaining aspect ratio */
+}
+
+#carouselExampleIndicators {
+  width: 100%; /* Adjust the width as needed */
+  max-height: 600px; /* Adjust the height as needed */
 }

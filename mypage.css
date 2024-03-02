@@ -224,7 +224,7 @@
 
 /* =====효준 코드 시작 */
 .info-area{
-    background-color: #fc6c7c;
+    background-color: lightblue;
     display: flex;
     flex-direction: row;
     margin-bottom: 1.5rem;
@@ -258,8 +258,8 @@
     display: inline-block;
     padding: 1em;
 
-    background-color: #c366eb;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 
@@ -586,4 +586,50 @@
 }
 /* recipe style end */
 
+/* 경일님 */
+.howto {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #007bff;
+  padding: 10px;
+  padding-top: 150px;
+  border-radius: 5px;
+  box-shadow: 0 rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+  text-align: center;
+  align-items: center;
+}
 
+.linemenuview {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.linemenu {
+  margin-right: 10px;
+  white-space: nowrap;
+  background-color: #7d9cbb;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  min-width: 80px;
+  max-width: 150px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;    
+}
+
+.exec {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.execmain{
+  margin-left: 10em;
+  width:80%;
+}
