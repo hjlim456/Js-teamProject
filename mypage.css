@@ -31,6 +31,7 @@
     font-weight: 900;
     font-size: 1.5rem;
     color: #0554f6;
+    margin-top: 2.5em;
   }
   
   .note-title {
@@ -99,13 +100,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+    animation: fadeIn 2s ease-in-out forwards;
   }
   
   .message-text-area{
     width: 90%;
     margin-bottom: 1em;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
   }
-  
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   .recommend-exercise{
     margin-top: 2.5em;
   }
@@ -118,7 +132,8 @@
   .search-guide-img {
     display: flex;
   }
-  
+    
+  /* 요소 스타일 */
   .exercise-input-box {
     border: none;
     border-radius: 1em;
@@ -126,8 +141,7 @@
     height: 80%;
     padding-left: 1em;
   }
-  
-  /* 요소 스타일 */
+
   .exercise-search-button {
     border: none;
     border-radius: 2em;
@@ -153,11 +167,61 @@
     position: relative;
   }
   
-  @media screen and (max-width: 1150px) {
+  /* 네브바 스타일 */
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  
+  .nav-box {
+    width: 30em;
+    height: 4.2em;
+    border-radius: 30em;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    gap: 2em;
+  }
+  
+  .nav-item {
+    gap: 15em;
+  }
+  
+  .nav-link {
+    transition: all 0.5s;
+  }
+  
+  .nav-link:hover {
+    font-weight: 900;
+    color: #0554f6;
+  }
+  
+  .my-icon {
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    background-color: #0554f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 63rem) {
     body {
-      margin: 2em;
+      padding: 2em;
+    }
+    .exercise-calories-wrap{
+      padding: 4em 1em;
+    }
+    .navbar{
+      position: sticky;
+      background-color: white;
+      top: 0;
     }
   }
+
 
 .info-area{
     background-color: #fc6c7c;
