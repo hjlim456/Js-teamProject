@@ -99,13 +99,11 @@
                         </div>
 
                         <div class="like-food-check-area">
-                            <h4>현재 음식을 알려주세요!!</h4>
-                            <button id="button13">tomato</button>
-                            <button id="button14">egg</button>
-                            <button id="button15">음식3</button>
-                            <button id="button16">음식4</button>
-                            <button id="button17">음식5</button>
-                            <button id="button18">음식6</button>
+                            <h4>오늘의 요리 재료를 알려주세요!</h4>
+                            <button>🍅tomato</button>
+                            <button>🥬kale</button>
+                            <button>🍗chicken</button>
+                            <button>🥚egg</button>
                         </div>
                     </div>
 
@@ -118,42 +116,6 @@
                                     <div id="result" class="col-md-10 col-sm-12"></div>
                                 </div>      
             </div>
-
-
-
-            <!-- 레시피 추천-이수 -->
-            <div class="section">
-                <div class="container recipe-area">
-                    <div class="row recipe-title-area">
-                        <div class="sub-title">오늘의 식사 추천</div>
-                        <div class="main-title">좋아하는 요리 재료를 입력하고 레시피를 확인해보세요!</div>
-                    </div>
-                    <div class="row cotent-center">
-                        <div class="col-md-5 recipe">
-                            <div>
-                                <p class="emoji">🍅🥑🥩🥚</p>
-                                <div class="recipe-research">
-                                    <input type="text" id="recipe-search-input" placeholder="오늘의 요리 재료를 입력해 주세요" onkeyup="enter()">
-                                    <button onclick="getSearchRecipe()">검색</button>
-                                </div> 
-                            </div>
-                            
-                            <div class="recipecard-area">
-                                <div class="recipe-scroll" id="view-recipecard">
-            
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 recipetext-area" id="click-recipe-area">
-                            <div class="recipe-alltext">
-                                <div class="recipe-alltext-img"><img src="https://cdn.huffingtonpost.kr/news/photo/202110/114008_218464.jpeg" width="340"></div>
-                                <h5>계란 후라이 어때?</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-=======
 
 
         <!-- 운동별 칼로리 영역-미나 -->
@@ -228,7 +190,38 @@
             </div>
         </div>
 
-        <div>testestg</div>
+        <!-- 레시피 추천-이수 -->
+        <div class="section" data-anchor="recipe-section">
+            <div class="container recipe-area" id="recipe-canarea">
+                <div class="row recipe-title-area">
+                    <div class="sub-title">오늘의 식사 추천</div>
+                    <div class="main-title">좋아하는 요리 재료를 입력하고 레시피를 확인해보세요!</div>
+                </div>
+                <div class="row cotent-center">
+                    <div class="col-md-5 recipe">
+                        <div>
+                            <p class="emoji">🍅🥑🥩🥚</p>
+                            <div class="recipe-research">
+                                <input type="text" id="recipe-search-input" placeholder="오늘의 요리 재료를 입력해 주세요" onkeyup="enter()">
+                                <button onclick="getSearchRecipe()">검색</button>
+                            </div> 
+                        </div>
+                        
+                        <div class="recipecard-area">
+                            <div class="recipe-scroll" id="view-recipecard">
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 recipetext-area" id="click-recipe-area">
+                        <div class="recipe-alltext">
+                            <div class="recipe-alltext-img"><img src="https://cdn.huffingtonpost.kr/news/photo/202110/114008_218464.jpeg" width="340"></div>
+                            <h5>계란 후라이 어때?</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
