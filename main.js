@@ -5,3 +5,4 @@ new fullpage('#fullpage', {
     afterResponsive: function(isResponsive){
     }
 });
+
