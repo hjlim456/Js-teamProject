@@ -21,11 +21,14 @@
     margin-top: 1em;
 }
 
-.info-area-form{
+.self-check-area{
     margin-top: 3em;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
 }
 
-.info-area-form form fieldset{
+.self-check-area div{
     border: 1px solid black;
     display: inline-block;
     padding: 1em;
@@ -33,59 +36,63 @@
     background-color: #c366eb;
     color: white;
 }
-.info-area-form form {
-    margin-left: 3em;
-}
 
 
-.info-area-form{
+.name-height-weight-area{
+    margin-top: 5em;
+
     display: flex;
-}
-
-/* .info-input-box{
-    margin-left: 6em;
-    width: calc(50% - 54px);
-    display: inline-block;
-    background-color: #fc6c7c;
+    justify-content: space-around;
 }
 
 
-.input-area>input{
-    margin-right: 0.5rem;
-    margin-top: 3rem;
-    width: 80%;
 
-    border: none;
-    border-bottom: 3px solid lightgray;
+/* ----버튼 css */
 
+.body-check-area button{
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  border-radius: 150px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
-.input-area>input:focus{
-    outline: none;
-    border-bottom: 3px solid rgb(235, 60, 241);
+.body-check-button-clicked{
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
 
-}
-  
 
-.add-button{
-    background-color: rgb(235, 60, 241);
-    border-radius: 8px;
-    border-style: solid;
-    border-color: rgb(235, 60, 241);
-    display: flex;
-    align-items: center;
 
-    height: 30px;
-    align-self: end;
+.like-exercise-check-area button{
+
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 150px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
-.add-button>i{
-    padding-top: 1px;
-    color:   #F0F0F0;
-    
+.like-exercise-check-button-clicked{
+    background-color: green;
+    color: white;
+    border: 1px solid green;
 }
-.add-button:disabled{
-    background-color: #b7b5b5;
-    border-color: #b7b5b5;
+
+
+
+.like-food-check-area button{
+
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 150px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
-.add-button:disabled>i{
-    color: #F0F0F0;
-} */
+.like-food-check-button-clicked{
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+}

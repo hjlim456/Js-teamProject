@@ -17,134 +17,71 @@
                         <h4>다양한 운동과 요리를 추천해드립니다!! <br>건강한 개발생활을 도와드립니다지금 시작해보세요!!</h4>
                     </div>
 
-                    <div class="info-area-form">
-                        <form action="">
-                            <fieldset class="body-check">
-                                <legend>현재 몸상태를 알려주세요!!</legend>
-                            
-                                <div>
-                                <input type="checkbox" id="t-neck" name="t-neck"  />
-                                <label for="t-neck">거북목</label>
-                                </div>
-                            
-                                <div>
-                                <input type="checkbox" id="p-neck" name="p-neck" />
-                                <label for="p-neck">일자목</label>
-                                </div>
-                                <div>
-                                <input type="checkbox" id="neck-disc" name="neck-disc" />
-                                <label for="neck-disc">목디스크</label>
-                                </div>
-                                <div>
-                                <input type="checkbox" id="back-disc" name="back-disc" />
-                                <label for="back-disc">허리디스크</label>
-                                </div>
-                                <div>
-                                <input type="checkbox" id="r-shoulder" name="r-shoulder" />
-                                <label for="r-shoulder">라운드숄더</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="curved-back" name="curved-back" />
-                                    <label for="curved-back">척추측만</label>
-                                </div>
+                    <form class="name-height-weight-area">
+                  
+                        <div>
+                            <h4>이름을 알려주세요!</h4>
+                            <section class="input-area">
+                                <input type="text" id="input-tap" placeholder="이름을 입력하세요!">
+                                <button id="add-button" class="name-add-button"  >
+                                    입력
+                                </button>
+                            </section>
+                        </div>
 
-                                <input type="submit" name="제출하기">
-                            </fieldset>
-                            
-                        </form>
+                        <div>
+                            <h4>키를 알려주세요!</h4>
+                            <section class="input-area">
+                                <input type="text" id="input-tap" placeholder="키를 입력하세요!">
+                                <button id="add-button" class="name-add-button"  >
+                                    입력
+                                </button>
+                            </section>
+                        </div>
 
-                        <form action="">
-                            <fieldset class="info-area-fieldset">
-                                <legend>좋아하는 음식을 선택하세요</legend>
-                            
-                                <div>
-                                <input type="checkbox" id="t-neck" name="t-neck"  />
-                                <label for="t-neck">t-neck</label>
-                                </div>
-                            
-                                <div>
-                                <input type="checkbox" id="p-neck" name="p-neck" />
-                                <label for="p-neck">일자목</label>
-                                </div>
-                                <div>
-                                <input type="checkbox" id="neck-disc" name="neck-disc" value="neck" />
-                                <label for="neck-disc">목디스크</label>
-                                </div>
-                                <div>
-                                <input type="checkbox" id="back-disc" name="back-disc" />
-                                <label for="back-disc">허리디스크</label>
-                                </div>
-                                <div>
-                                <input type="checkbox" id="r-shoulder" name="r-shoulder" />
-                                <label for="r-shoulder">라운드숄더</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="curved-back" name="curved-back" />
-                                    <label for="curved-back">척추측만</label>
-                                </div>
-                                <input type="submit" name="제출하기">
-                            </fieldset>
-                        </form>
+                        <div>
+                            <h4>체중을 알려주세요!</h4>
+                            <section class="input-area">
+                                <input type="text" id="input-tap" placeholder="체중을 입력하세요!">
+                                <button id="add-button" class="name-add-button"  >
+                                    입력
+                                </button>
+                            </section>
+                        </div>
 
-                        <form action="">
-                            <fieldset class="body-check">
-                                <legend>현재 몸상태를 알려주세요!!</legend>
-                            
-                                <div>
-                                <input type="checkbox" id="t-neck" name="t-neck"  />
-                                <label for="t-neck">거북목</label>
-                                </div>
-                            
-                                <div>
-                                <input type="checkbox" id="p-neck" name="p-neck" />
-                                <label for="p-neck">일자목</label>
-                                </div>
-                                <div>
-                                <input type="checkbox" id="neck-disc" name="neck-disc" />
-                                <label for="neck-disc">목디스크</label>
-                                </div>
-                                <div>
-                                <input type="checkbox" id="back-disc" name="back-disc" />
-                                <label for="back-disc">허리디스크</label>
-                                </div>
-                                <div>
-                                <input type="checkbox" id="r-shoulder" name="r-shoulder" />
-                                <label for="r-shoulder">라운드숄더</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="curved-back" name="curved-back" />
-                                    <label for="curved-back">척추측만</label>
-                                </div>
-                                <input type="submit" name="제출하기">
-                            </fieldset>
-                            
-                        </form>
-                        
+                    </form>
+
+                    <div class="self-check-area">
+                        <div class="body-check-area">
+                            <h4>현재 몸상태를 알려주세요!!</h4>
+                            <button id="button1">거북목</button>
+                            <button id="button2">일자목</button>
+                            <button id="button3">목디스크</button>
+                            <button id="button4">허리디스크</button>
+                            <button id="button5">라운드숄더</button>
+                            <button id="button6">척추측만</button>
+                        </div>
+
+                        <div class="like-exercise-check-area">
+                            <h4>좋아하는 운동을 선택하세요</h4>
+                            <button id="button7">스쿼트</button>
+                            <button id="button8">운동1</button>
+                            <button id="button9">운동2</button>
+                            <button id="button10">운동3</button>
+                            <button id="button11">운동4</button>
+                            <button id="button12">운동5</button>
+                        </div>
+
+                        <div class="like-food-check-area">
+                            <h4>현재 음식을 알려주세요!!</h4>
+                            <button id="button13">tomato</button>
+                            <button id="button14">egg</button>
+                            <button id="button15">음식3</button>
+                            <button id="button16">음식4</button>
+                            <button id="button17">음식5</button>
+                            <button id="button18">음식6</button>
+                        </div>
                     </div>
-                    <!-- <div class="info-input-box">
-                        <select name="time">
-                            <option value="morning">Morning</option>
-                            <option value="afternoon">Afernoon</option>
-                            <option value="night">Night</option>
-                        </select>
-                        <section class="input-area">
-                            <input type="text" id="input-tap" placeholder="현재 나의 체형">
-                            <button id="add-button" class="add-button" disabled >
-                                <i class="fa-solid fa-plus"></i>
-                            </button>
-                        </section>  <section class="input-area">
-                            <input type="text" id="input-tap" placeholder="할일을 입력하세요!">
-                            <button id="add-button" class="add-button" disabled >
-                                <i class="fa-solid fa-plus"></i>
-                            </button>
-                        </section>  <section class="input-area">
-                            <input type="text" id="input-tap" placeholder="할일을 입력하세요!">
-                            <button id="add-button" class="add-button" disabled >
-                                <i class="fa-solid fa-plus"></i>
-                            </button>
-                        </section>
-                    </div> -->
-
 
                 </div>
             </div>
