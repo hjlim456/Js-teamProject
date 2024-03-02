@@ -199,6 +199,19 @@
 }
 
 
+.info-area-form .form fieldset{
+  border: 1px solid black;
+  display: inline-block;
+  padding: 1em;
+
+  background-color: #c366eb;
+  color: white;
+}
+.info-area-form .form {
+  margin-left: 3em;
+}
+
+
 .info-area-form{
     display: flex;
 }
@@ -255,11 +268,12 @@
 /* 통증별 최적 운동방법 __ 정경일 */
 
 .howto {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
   color: #ffffff;
   background-color: #007bff;
   padding: 10px;
+  padding-top: 150px;
   border-radius: 5px;
   box-shadow: 0 rgba(0,0,0,0.1);
   margin-bottom: 15px;
