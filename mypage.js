@@ -6,6 +6,8 @@ new fullpage('#fullpage', {
   }
 });
 
+
+
 //통증별 최적 운동방법 찾기__ 정경일
 
 let result;
@@ -53,6 +55,7 @@ document.getElementById('clickgoto').addEventListener('click', () => {
 document.getElementById('result').addEventListener('click', () => {
   window.location.href = "https://exec2024.netlify.app/?name=거북목";
 });
+
 
 
 
