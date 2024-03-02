@@ -222,7 +222,7 @@
     }
   }
 
-
+/* =====효준 코드 시작 */
 .info-area{
     background-color: #fc6c7c;
     display: flex;
@@ -267,7 +267,60 @@
     margin-top: 5em;
 
     display: flex;
+    
+    justify-content: space-around;
 }
+
+/* ----버튼 css */
+
+.body-check-area button{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 150px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+    .body-check-button-clicked{
+        background-color: red;
+        color: white;
+        border: 1px solid red;
+    }
+
+
+.like-exercise-check-area button{
+
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 150px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+    .like-exercise-check-button-clicked{
+        background-color: green;
+        color: white;
+        border: 1px solid green;
+    }
+
+
+.like-food-check-area button{
+
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 150px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+    .like-food-check-button-clicked{
+        background-color: blue;
+        color: white;
+        border: 1px solid blue;
+    }
+/* ==========효준 코드 끝 */
+
 
 /* .info-input-box{
     margin-left: 6em;
@@ -532,3 +585,5 @@
   }
 }
 /* recipe style end */
+
+
