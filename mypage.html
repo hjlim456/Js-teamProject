@@ -38,76 +38,78 @@
     <div id="fullpage" >
         <div class="section info-area" >
             <div class="container">
-                    <div class="info-text-area ">
-                        <h1>통증 부위를 입력해보세요</h1>
-                        <h4>다양한 운동과 요리를 추천해드립니다!! <br>건강한 개발생활을 도와드립니다지금 시작해보세요!!</h4>
-                    </div>
-
-                    <!-- <form class="name-height-weight-area">//
-                  
-                        <div>
-                            <h4>이름을 알려주세요!</h4>
-                            <section class="input-area">
-                                <input type="text" id="input-tap" placeholder="이름을 입력하세요!">
-                                <button id="add-button" class="name-add-button"  >
-                                    입력
-                                </button>
-                            </section>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="info-text-area ">
+                            <div class="sub-title">오늘의 당신은?</div>
+                            <div class="main-title">당신에 대해 알려주세요!</div>
+                            <p>다양한 운동과 요리를 추천해드립니다!!</p>
+                            <!-- <h1>통증 부위를 입력해보세요</h1>
+                            <h4>다양한 운동과 요리를 추천해드립니다!! <br>건강한 개발생활을 도와드립니다지금 시작해보세요!!</h4> -->
                         </div>
 
-                        <div>
-                            <h4>키를 알려주세요!</h4>
-                            <section class="input-area">
-                                <input type="text" id="input-tap" placeholder="키를 입력하세요!">
-                                <button id="add-button" class="name-add-button"  >
-                                    입력
-                                </button>
-                            </section>
-                        </div>
+                        <!-- <form class="name-height-weight-area">
+                            <div>
+                                <h4>체중을 알려주세요!</h4>
+                                <section class="input-area">
+                                    <input type="text" id="input-tap" placeholder="체중을 입력하세요!">
+                                    <button id="add-button" class="name-add-button">입력</button>
+                                </section>
+                            </div>
 
-                        <div>
-                            <h4>체중을 알려주세요!</h4>
-                            <section class="input-area">
-                                <input type="text" id="input-tap" placeholder="체중을 입력하세요!">
-                                <button id="add-button" class="name-add-button"  >
-                                    입력
-                                </button>
-                            </section>
-                        </div>
+                        </form> -->
 
-                    </form> -->
+                        <div class="self-check-area">
+                            <div class="body-check-area">
+                                <h4>지금 몸은 어떠신가요?</h4>
+                                <button id="button1" onclick="makeAjaxCall('stretching', 'neck', '')">거북목</button>
+                                <button id="button3" onclick="makeAjaxCall('strength', 'neck', '')">목디스크</button>
+                                <button id="button3" onclick="makeAjaxCall('strength', 'lower_back', '')">허리디스크</button>
+                                <button id="button4" onclick="makeAjaxCall('strength', 'traps', '')">라운드숄더</button>
+                            </div>
 
-                    <div class="self-check-area">
-                        <div class="body-check-area">
-                            <h4>현재 몸상태를 알려주세요!!</h4>
+                            <div class="like-exercise-check-area">
+                                <h4>좋아하는 운동은?</h4>
+                                <button id="button7">swim</button>
+                                <button id="button8">운동1</button>
+                                <button id="button9">운동2</button>
+                                <button id="button10">운동3</button>
+                                
+                            </div>
 
-                            <button id="button1" onclick="makeAjaxCall('stretching', 'neck', '')">거북목</button>
-                            <button id="button3" onclick="makeAjaxCall('strength', 'neck', '')">목디스크</button>
-                            <button id="button3" onclick="makeAjaxCall('strength', 'lower_back', '')">허리디스크</button>
-                            <button id="button4" onclick="makeAjaxCall('strength', 'traps', '')">라운드숄더</button>
-                        </div>
-
-                        <div class="like-exercise-check-area">
-                            <h4>좋아하는 운동을 선택하세요</h4>
-                            <button id="button7">swim</button>
-                            <button id="button8">운동1</button>
-                            <button id="button9">운동2</button>
-                            <button id="button10">운동3</button>
-                            
-                        </div>
-
-                        <div class="like-food-check-area">
-
-                            <h4>오늘의 요리 재료를 알려주세요!</h4>
-                            <button>🍅tomato</button>
-                            <button>🥬kale</button>
-                            <button>🍗chicken</button>
-                            <button>🥚egg</button>
+                            <div class="like-food-check-area">
+                                <h4>오늘의 요리 재료는?</h4>
+                                <button>🍅tomato</button>
+                                <button>🥬kale</button>
+                                <button>🍗chicken</button>
+                                <button>🥚egg</button>
+                            </div>
                         </div>
                     </div>
+                    
+                    
+                    <div class="col-md-5">
+                        <div class="plan-style">
+                            <div class="main-title">오늘 하루 기록하기!</div>
+                            <div class="plan-input-area">
+                                SPORT & WATER
+                                <section class="input-area">
+                                    <input type="text" id="plan-sport-input" placeholder="어떤 운동을 하셨나요?">
+                                    <input type="number" id="plan-water-input" placeholder="1잔부터 5잔까지!">
+                                    <button id="plan-add-button" class="name-add-button" onclick="planAdd()">입력</button>
+                                </section>
+                            </div>
+                            <div class="plan-line" id="plan-area">
 
+                                    <!-- 기록 들어감 -->
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+            </div>    
+        </div>
             <div class="section" data-anchor="ache-section" style="background-color: skyblue;">
                                 <!-- 운동 추천 정경일 -->
                                 <div  class="row execmain">  
@@ -234,6 +236,7 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a86c609f7e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="mypage.js"></script>
 </body>
 </html>

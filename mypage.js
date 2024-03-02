@@ -188,10 +188,6 @@ const clickRecipe=(event)=>{
     document.getElementById("click-recipe-area").innerHTML=clickRecipeHTML
 }
 
-const clickRender=()=>{
-    //const clickRecipeHTML=
-}
-
 const errorRender=(errorMessage)=>{
     const errorHTML=`<div class="alert alert-danger" role="alert">
     ${errorMessage}
@@ -248,3 +244,41 @@ document.getElementById('clickgoto').addEventListener('click', () => {
 document.getElementById('result').addEventListener('click', () => {
   window.location.href = "exercise.html";
 });
+
+let userSport=document.getElementById("plan-sport-input")
+let userWater=document.getElementById("plan-water-input")
+
+const planAdd=()=>{
+  
+  let waterIcon=" ";
+  if(userWater.value==1){
+    waterIcon="💧";
+  } else if(userWater.value==2){
+    waterIcon="💧💧";
+  } else if(userWater.value==3){
+    waterIcon="💧💧💧";
+  } else if(userWater.value==4){
+    waterIcon="💧💧💧💧";
+  }  else if(userWater.value==5){
+    waterIcon="💧💧💧💧💧";
+  } else{
+    userWater.value="1~5 숫자!"
+    return;
+  }
+
+  let planAddHTML=`<div class="plan-item">
+  <div class="plan-date">${moment().format("MMM D")}</div>
+  <div class="plan-sport">${userSport.value}</div>
+  <div class="plan-water">${waterIcon}</div>
+  <div><button>삭제</button><div>
+</div>`
+
+  document.getElementById("plan-area").innerHTML+=planAddHTML
+
+  inputRemove();
+}
+
+const inputRemove=()=>{
+  userSport.value="";
+  userWater.value="";
+}
