@@ -442,7 +442,7 @@ margin-top: 0.3rem;
 
 .plan-sport{
 width: 8rem;
-overflow: scroll;
+/* overflow: scroll; */
 scrollbar-width: none;
 }
 
