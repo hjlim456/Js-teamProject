@@ -28,7 +28,7 @@
                 <div class="d-flex nav-box">
                     <div class="nav-item"><a class="nav-link" href="#ache-section">통증 개선</a></div>
                     <div class="nav-item"><a class="nav-link" href="#calories-section">운동 칼로리</a></div>
-                    <div class="nav-item"><a class="nav-link" href="#recipe-section">레시피 추천</a></div>                    
+                    <div class="nav-item"><a class="nav-link" href="#recipe-section">레시피 추천</a></div>
                     <div class="nav-item my-icon"><a class="nav-link" href="./mypage.html">
                             <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i>
                         </a></div>
@@ -41,7 +41,7 @@
         <div class="section info-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-lg-7">
                         <div class="info-text-area ">
                             <div class="sub-title">오늘의 당신은?</div>
                             <div class="main-title">당신에 대해 알려주세요!</div>
@@ -64,10 +64,10 @@
                         <div class="self-check-area">
                             <div class="body-check-area">
                                 <h4>지금 몸은 어떠신가요?</h4>
-                                <button id="button1" onclick="makeAjaxCall('stretching', 'neck', '')">거북목</button>
-                                <button id="button3" onclick="makeAjaxCall('strength', 'neck', '')">목디스크</button>
-                                <button id="button3" onclick="makeAjaxCall('strength', 'lower_back', '')">허리디스크</button>
-                                <button id="button4" onclick="makeAjaxCall('strength', 'traps', '')">라운드숄더</button>
+                                <button id="button1" onclick="makeAjaxCall('stretching', 'neck', '')">🐢거북목</button>
+                                <button id="button3" onclick="makeAjaxCall('strength', 'neck', '')">🤦목디스크</button>
+                                <button id="button3" onclick="makeAjaxCall('strength', 'lower_back', '')">🧎‍♂️허리디스크</button>
+                                <button id="button4" onclick="makeAjaxCall('strength', 'traps', '')">🙆‍♀️라운드숄더</button>
                             </div>
 
                             <div class="like-exercise-check-area">
@@ -80,17 +80,17 @@
                             </div>
 
                             <div class="like-food-check-area">
-                                <h4>오늘의 요리 재료는?</h4>
+                                <h4>오늘의 요리는?</h4>
                                 <button>🍅tomato</button>
-                                <button>🥬kale</button>
-                                <button>🍗chicken</button>
-                                <button>🥚egg</button>
+                                <button>🥗pasta</button>
+                                <button>🍲soup</button>
+                                <button>🍜noodle</button>
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="col-md-5">
+                    
+                    
+                    <div class="col-lg-5">
                         <div class="plan-style">
                             <div class="main-title">오늘 하루 기록하기!</div>
                             <div class="plan-input-area">
@@ -218,15 +218,14 @@
             <div class="container recipe-area" id="recipe-canarea">
                 <div class="row recipe-title-area">
                     <div class="sub-title">오늘의 식사 추천</div>
-                    <div class="main-title">좋아하는 요리 재료를 입력하고 레시피를 확인해보세요!</div>
+                    <div class="main-title">좋아하는 요리를 입력하고 레시피를 확인해보세요!</div>
                 </div>
                 <div class="row cotent-center">
                     <div class="col-md-5 recipe">
                         <div>
                             <p class="emoji">🍅🥑🥩🥚</p>
                             <div class="recipe-research">
-                                <input type="text" id="recipe-search-input" placeholder="오늘의 요리 재료를 입력해 주세요"
-                                    onkeyup="searchEnter()">
+                                <input type="text" id="recipe-search-input" placeholder="오늘의 요리를 입력해 주세요" onkeyup="searchEnter()">
                                 <button onclick="getSearchRecipe()">검색</button>
                             </div>
                         </div>

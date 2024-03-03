@@ -264,35 +264,37 @@ let userWater=document.getElementById("plan-water-input")
 
 const planAdd=()=>{
 
-let waterIcon=" ";
-if(userWater.value==1){
-  waterIcon="💧";
-} else if(userWater.value==2){
-  waterIcon="💧💧";
-} else if(userWater.value==3){
-  waterIcon="💧💧💧";
-} else if(userWater.value==4){
-  waterIcon="💧💧💧💧";
-}  else if(userWater.value==5){
-  waterIcon="💧💧💧💧💧";
-} else{
-  userWater.value="1~5 숫자!"
-  return;
-}
+  let waterIcon=" ";
+  if(userWater.value==1){
+    waterIcon="💧";
+  } else if(userWater.value==2){
+    waterIcon="💧💧";
+  } else if(userWater.value==3){
+    waterIcon="💧💧💧";
+  } else if(userWater.value==4){
+    waterIcon="💧💧💧💧";
+  }  else if(userWater.value==5){
+    waterIcon="💧💧💧💧💧";
+  } else{
+    userWater.value="1~5 숫자!"
+    return;
+  }
 
-let planAddHTML=`<div class="plan-item">
-<div class="plan-date">${moment().format("MMM D")}</div>
-<div class="plan-sport">${userSport.value}</div>
-<div class="plan-water">${waterIcon}</div>
-<div><button>삭제</button><div>
-</div>`
+  let planAddHTML=`<div class="plan-item">
+  <div class="plan-date">${moment().format("MMM D")}</div>
+  <div class="plan-sport">${userSport.value}</div>
+  <div class="plan-water">${waterIcon}</div>
+  <div><button class="plan-delete-button" onclick="planDelete(event)" id="plan-delete">🗙</button><div>
+  >>>>>>> develop
+  </div>`
 
-document.getElementById("plan-area").innerHTML+=planAddHTML
+  document.getElementById("plan-area").innerHTML+=planAddHTML
 
-inputRemove();
+  let planDeleteLine = document.createElement("plan-delete")
+  inputRemove();
 }
 
 const inputRemove=()=>{
-userSport.value="";
-userWater.value="";
+  userSport.value="";
+  userWater.value="";
 }
