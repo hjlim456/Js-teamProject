@@ -59,6 +59,16 @@ let caloriesRender = () => {
   document.getElementById("result-area").innerHTML = resultHTML;
 };
 
+  //버튼 함수
+  let exerciseSearchButton = document.querySelectorAll(".like-exercise-check-area button")
+  exerciseSearchButton.forEach((exerciseSearchButton=>exerciseSearchButton.addEventListener("click",(event)=>getExerciseKeyButton(event))))
+  
+  let getExerciseKeyButton=(event)=>{
+    let clickKeyword=event.target.textContent
+    console.log(clickKeyword)
+    inputElement.value = `${clickKeyword}`
+  }
+
 // 이모지 애니메이션
 let changingText = document.getElementById("changingText");
 let texts = [

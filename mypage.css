@@ -208,6 +208,48 @@ p {
   align-items: center;
 }
 
+/* 푸터 스타일 */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: -0.2em;
+  padding: 0;
+}
+
+.footer-text {
+  font-family: "Pretendard-Regular";
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.footer-sub-text {
+  font-family: "Pretendard-Regular";
+  font-size: 0.9rem;
+}
+.footer-wrap {
+  background-color: rgb(16, 16, 16);
+  color: rgb(153, 153, 153);
+  padding: 1em;
+}
+
+.footer a {
+  color: rgb(153, 153, 153);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 50 50; */
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+
 @media screen and (max-width: 63rem) {
   body {
     padding: 2em;
