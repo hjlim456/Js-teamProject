@@ -209,11 +209,6 @@ p {
 }
 
 /* 푸터 스타일 */
-a {
-  text-decoration: none;
-  color: black;
-}
-
 h2 {
   margin: 0;
   margin-bottom: -0.2em;
@@ -231,13 +226,21 @@ h2 {
   font-size: 0.9rem;
 }
 .footer-wrap {
-  background-color: rgb(16, 16, 16);
-  color: rgb(153, 153, 153);
+  /* background-color: rgb(16, 16, 16); */
+  /* color: rgb(153, 153, 153); */
+  background-color: #f9fafb;
+  color:black;  
   padding: 1em;
 }
 
 .footer a {
-  color: rgb(153, 153, 153);
+  text-decoration:none;
+  /* color: rgb(153, 153, 153); */
+  color:black;
+}
+
+.footer a :hover{
+  color : #0554f6;
 }
 
 .footer {
@@ -246,8 +249,14 @@ h2 {
   align-items: center;
   /* padding: 50 50; */
   margin: 0 auto;
-  max-width: 1080px;
+  /* max-width: 1080px; */
 }
+
+.right i{
+  margin-right : 10px;
+}
+
+/* footer 끝 */
 
 @media screen and (max-width: 63rem) {
   body {
@@ -801,4 +810,8 @@ border-radius: 1rem;
   
   .detail-go:hover{
     font-weight: 900;
+  }
+
+  .right i{
+    margin-right : 10px;
   }
