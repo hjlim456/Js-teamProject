@@ -749,18 +749,18 @@ border-radius: 1rem;
     max-width: 90dvw;
   }
 
-.recipe-alltext{
-    overflow: scroll;
-    scrollbar-width: none;
-}
+  .recipe-alltext{
+      overflow: scroll;
+      scrollbar-width: none;
+  }
 
-.recipe-ingredient{
-    overflow: visible;
-}
+  .recipe-ingredient{
+      overflow: visible;
+  }
 
-.nutri-font{
-    font-size: 0.7rem;
-}
+  .nutri-font{
+      font-size: 0.7rem;
+  }
 
   .recipe-research input{
     width: 90%;
@@ -816,13 +816,13 @@ border-radius: 1rem;
     margin: 0rem;
   }
 
-  /* #plan-sport-input{
+  #plan-sport-input{
     width: 54%;
   }
   
   #plan-water-input{
     width: 44%;
-  } */
+  }
 
   .name-add-button{
     width: 100%;
