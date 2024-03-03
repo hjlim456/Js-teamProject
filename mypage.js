@@ -270,11 +270,12 @@ const planAdd=()=>{
   <div class="plan-date">${moment().format("MMM D")}</div>
   <div class="plan-sport">${userSport.value}</div>
   <div class="plan-water">${waterIcon}</div>
-  <div><button>삭제</button><div>
+  <div><button class="plan-delete-button" onclick="planDelete(event)" id="plan-delete">🗙</button><div>
 </div>`
 
   document.getElementById("plan-area").innerHTML+=planAddHTML
 
+  let planDeleteLine = document.createElement("plan-delete")
   inputRemove();
 }
 

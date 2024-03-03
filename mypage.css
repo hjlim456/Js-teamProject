@@ -224,7 +224,7 @@
 
 /* =====효준 코드 시작 */
 .info-area{
-    background-color: lightblue;
+    background-color: #deecff;
     display: flex;
     flex-direction: row;
 
@@ -373,6 +373,7 @@
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -385,8 +386,9 @@
 }
 
 .plan-date{
-  width: 4rem;
+  width: 4.5rem;
   margin: 0.5rem;
+  margin-left: 1rem;
 }
 
 .plan-sport{
@@ -400,7 +402,7 @@
 }
 
 #plan-sport-input{
-  width: 11rem;
+  width: 45%;
   border: none;
   border-radius: 0.4rem;
   padding: 0.25rem;
@@ -408,7 +410,7 @@
 }
 
 #plan-water-input{
-  width: 11rem;
+  width: 40%;
   border: none;
   border-radius: 0.4rem;
   padding: 0.25rem;
@@ -421,6 +423,11 @@
   padding: 0.25rem 0.6rem;
   background-color: #0554f6;
   color: white;
+}
+
+.plan-delete-button{
+  border: none;
+  background-color: transparent;
 }
 
 /* ==========효준 코드 끝 */
@@ -680,12 +687,17 @@
 
 
 @media screen and (max-width:48rem){
+
+  .recipe-area{
+    flex-wrap: wrap;
+  }
+
   .recipe{
-      width: 25em;
+    max-width: 90dvw;
   }
 
   .recipetext-area{
-      width: 25em;
+    max-width: 90dvw;
   }
 
   .recipe-alltext{
@@ -701,10 +713,81 @@
       font-size: 0.7rem;
   }
 
+  .recipe-research input{
+    width: 90%;
+  }
+
   .recipe-research button{
       margin: 0.5rem;
-      width: 20rem;
+      width: 90%;
   }
+
+  /* all style */
+  .main-title{
+    font-size: 2rem;
+  }
+
+  /* 효준님영역 */
+  
+  .self-check-area{
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem 1rem;
+  }
+
+  .self-check-area div{
+    width: 100%;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .plan-style{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .plan-line{
+    font-size: 0.9rem;
+    max-height: 17.5rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+
+  .plan-line div{
+    margin-right: 0rem;
+    padding-right: 0rem;
+    padding-left: 0.5rem;
+  }
+
+  .plan-item{
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .plan-date{
+    margin: 0rem;
+  }
+
+  /* #plan-sport-input{
+    width: 54%;
+  }
+  
+  #plan-water-input{
+    width: 44%;
+  } */
+
+  .name-add-button{
+    width: 100%;
+    margin: 0.5rem 0rem;
+  }
+
+  .plan-delete-button{
+    margin-right: 0.5rem;
+  }
+
+  .navbar-brand{
+    margin: 0rem;
+  }
+  
 }
 /* recipe style end */
 
@@ -754,4 +837,5 @@
 .execmain{
   margin-left: 10em;
   width:80%;
+  overflow: hidden;
 }
