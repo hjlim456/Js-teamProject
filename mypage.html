@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>마이 페이지</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css" />
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="mypage.css">
     <!-- 경일님  -->
@@ -17,6 +18,7 @@
     </script> -->
 
 </head>
+
 <body>
     <!-- 네브바 -->
     <header>
@@ -35,8 +37,8 @@
         </nav>
     </header>
 
-    <div id="fullpage" >
-        <div class="section info-area" >
+    <div id="fullpage">
+        <div class="section info-area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
@@ -71,10 +73,10 @@
                             <div class="like-exercise-check-area">
                                 <h4>좋아하는 운동은?</h4>
                                 <button id="button7">swim</button>
-                                <button id="button8">운동1</button>
-                                <button id="button9">운동2</button>
-                                <button id="button10">운동3</button>
-                                
+                                <button id="button8">yoga</button>
+                                <button id="button9">tennis</button>
+                                <button id="button10">hiking</button>
+
                             </div>
 
                             <div class="like-food-check-area">
@@ -101,23 +103,43 @@
                             </div>
                             <div class="plan-line" id="plan-area">
 
-                                    <!-- 기록 들어감 -->
+                                <!-- 기록 들어감 -->
 
                             </div>
                         </div>
                     </div>
                 </div>
 
-            </div>    
-        </div>
-            <div class="section" data-anchor="ache-section" style="background-color: skyblue;">
-                                <!-- 운동 추천 정경일 -->
-                                <div  class="row execmain">  
-                                    <div id="clickgoto" class="col-md-2 col-sm-12 howto">최적 운동방법</div>
-                                    <div id="result" class="col-md-10 col-sm-12"></div>
-                                </div>      
             </div>
+        </div>
 
+        <div class="section" data-anchor="ache-section" style="background-color:#f9fafb;">
+            <!-- 운동 추천 정경일 -->
+            <div class="section" data-anchor="ache-section">
+                <div class="exercise-calories-wrap">
+                    <!-- 타이틀 -->
+                    <div class="calories-title-area">
+                        <div class="sub-title">맞춤형 운동 방법</div>
+                        <div class="main-title">증상별 상세한 운동 내용을 확인해보세요!</div>
+                    </div>
+                    <!-- 결과박스 -->
+                    <div class="container mt-2">
+                        <div class="row execmain">
+                            <div id="clickgoto" class="col-md-2 col-sm-12 howto">최적 운동방법</div>
+                            <div id="result" class="col-md-10 col-sm-12">
+                                <div class="exec">
+                                    <div class="linemenuview">맞춤형 운동으로 건강한 개발자 생활하세요👍</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 자세히 보러가기 -->
+                    <div>
+                    <button id="detail-go" class="detail-go"> 더 자세히 확인해보기 > </button>
+                </div>
+                </div>
+            </div>
+        </div>
 
         <!-- 운동별 칼로리 영역-미나 -->
         <div class="section" data-anchor="calories-section">
@@ -128,10 +150,10 @@
                     <div class="sub-title">오늘의 도전 운동</div>
                     <div class="main-title">좋아하는 운동을 입력하고 칼로리를 확인해보세요!</div>
                 </div>
-        
+
                 <!-- 칼로리 입력 & 결과 박스-->
                 <div class="row exercise-calories">
-        
+
                     <!-- 입력 -->
                     <div class="col-lg-2 exercise-input-area">
                         <div class="animated-container">
@@ -140,10 +162,10 @@
                         <div>
                             <input type="text" id="exerciseInput" class="exercise-input-box" onclick="clearInput()"
                                 placeholder="좋아하는 운동을 입력하세요">
-                            <button id="exerciseSearch" class="exercise-search-button">검색</button>
+                            <button href="" id="exerciseSearch" class="exercise-search-button">검색</button>
                         </div>
                     </div>
-        
+
                     <!-- 결과 -->
                     <div id="result-area" class="col-lg-2 result-area">
                         <!-- <div>
@@ -158,7 +180,7 @@
                         <div class="note-text">몇 칼로리가 소모될까?</div>
                     </div>
                 </div>
-        
+
                 <!-- 오늘의 추천운동 -->
                 <section class="recommend-exercise">
                     <div class="search-guide-title">
@@ -205,21 +227,47 @@
                             <div class="recipe-research">
                                 <input type="text" id="recipe-search-input" placeholder="오늘의 요리를 입력해 주세요" onkeyup="searchEnter()">
                                 <button onclick="getSearchRecipe()">검색</button>
-                            </div> 
+                            </div>
                         </div>
-                        
+
                         <div class="recipecard-area">
                             <div class="recipe-scroll" id="view-recipecard">
-        
+
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 recipetext-area" id="click-recipe-area">
                         <div class="recipe-alltext">
-                            <div class="recipe-alltext-img"><img src="https://cdn.huffingtonpost.kr/news/photo/202110/114008_218464.jpeg" width="340"></div>
+                            <div class="recipe-alltext-img"><img
+                                    src="https://cdn.huffingtonpost.kr/news/photo/202110/114008_218464.jpeg"
+                                    width="340"></div>
                             <h5>계란 후라이 어때?</h5>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <div class="section fp-auto-height footer-wrap">
+            <div class="container footer">
+                <div class="left">
+                    <h2 class="footer-text">개운하다</h2>
+                    <p class="footer-sub-text">Copyright ⓒ 코딩 알려주는 누나</p>
+                </div>
+                <div class="right">
+                    <a href="https://www.youtube.com/@user-yu8so2ck1z" aria-label="YouTube" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-xl fa-youtube"></i>
+                    </a>
+                    <a href="https://github.com/hjlim456/Js-teamProject.git" aria-label="GitHub" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-xl fa-github"></i>
+                    </a>
+                    <a href="https://www.pipc.go.kr/np/default/page.do?mCode=H010000000" aria-label="개인정보처리방침"
+                        target="_blank" rel="noopener noreferrer">
+                        <p class="footer-sub-text">개인정보처리방침</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -239,4 +287,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="mypage.js"></script>
 </body>
+
 </html>

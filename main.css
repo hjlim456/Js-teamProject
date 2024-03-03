@@ -1,112 +1,270 @@
 @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
-
 
 body {
-    font-family: "Pretendard-Regular";
-    margin: 0;
-    padding: 0;
+  font-family: "Pretendard-Regular";
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width: 63rem) {
+  body {
+    padding: 3em;
   }
 
- /* 네브바 스타일 */
- .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: 900;
-  }
-  
-  .nav-box {
-    width: 30em;
-    height: 4.2em;
-    border-radius: 30em;
+  .navbar {
+    position: sticky;
     background-color: white;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    gap: 2em;
-  }
-  
-  .nav-item {
-    gap: 15em;
-  }
-  
-  .nav-link {
-    transition: all 0.5s;
-  }
-  
-  .nav-link:hover {
-    font-weight: 900;
-    color: #0554f6;
-  }
-  
-  .my-icon {
-    width: 3em;
-    height: 3em;
-    border-radius: 100%;
-    background-color: #0554f6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 0;
   }
 
-  @media screen and (max-width: 63rem) {
-    body {
-        padding: 2em;
-      }
-
-    .navbar{
-      position: sticky;
-      background-color: white;
-      top: 0;
-    }
+  .img-container {
+    width: 20em;
+    height: 10em;
+    border-radius: 1.5em;
+    overflow: hidden;
+    box-shadow: 10px 10px 30px lightslategray;
   }
 
-.plz{
-    /* padding : 90px 150px !important; */
-    display: flex !important;
-    /* justify-content : space-between !important; */
-    align-items: center !important;
-    margin : 0 auto;
+  .text-area {
+    margin-top: 6em;
+  }
+
+  .text-area-box {
+    position: relative;
+    /* bottom: -5em; */
+  }
+
+  .img-area {
+    margin-top: 3em;
+    margin-bottom: 6em;
+  }
+
+  .note-text {
+    /* margin-bottom: 5em; */
+    font-family: "Pretendard-Regular";
+    font-size: 1rem;
+  }
 }
 
-a {
-    text-decoration: none;
-    color : black;
+/* 네브바 스타일 */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
-.footer{
-    display : flex;
-    justify-content : space-between;
-    align-items : center;
-    padding : 50 50;
-    margin : 0 auto;
-    max-width : 1080px;
-}
-.texts{
-  width : 65%;
-}
-
-/* .imgs{
-  width : 40%;
-} */
-
-img{
-  width : 25em;
-  max-height : 80%;
-  border-radius : 1.5em;
-  box-shadow : 10px 10px 30px lightslategray;
+.nav-box {
+  width: 30em;
+  height: 4.2em;
+  border-radius: 30em;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  gap: 2em;
 }
 
-.carousel-item img {
-  max-width: 100%; /* Ensures image does not exceed its container */
-  height: auto; /* Adjusts height while maintaining aspect ratio */
+.nav-item {
+  gap: 15em;
 }
 
-#carouselExampleIndicators {
-  width: 100%; /* Adjust the width as needed */
-  max-height: 600px; /* Adjust the height as needed */
+.nav-link {
+  transition: all 0.5s;
+}
+
+.nav-link:hover {
+  font-weight: 900;
+  color: #0554f6;
+}
+
+.my-icon {
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  background-color: #0554f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 폰트 스타일 */
+.main-title {
+  font-family: "Pretendard-Regular";
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 120%;
+}
+
+.main-title-color {
+  font-family: "Pretendard-Regular";
+  font-weight: 900;
+  font-size: 3.2rem;
+  color: #0554f6;
+  line-height: 120%;
+}
+
+.sub-title {
+  font-family: "Pretendard-Regular";
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #0554f6;
+  margin-bottom: 0.3em;
+}
+
+.note-text {
+  margin-top: 0.5em;
+  font-family: "Pretendard-Regular";
+  font-size: 1.3rem;
+}
+
+/* 영역 스타일 */
+.bg-color {
+  background-color: #f9fafb;
+}
+
+.main-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  /* min-width: 100vw; */
+}
+
+.text-area-box {
+  width: 50em;
+  height: 25em;
+  background-color: white;
+  opacity: 0.95;
+  border-radius: 1.5em;
+  box-shadow: 10px 10px 30px lightslategray;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+.img-container {
+  width: 30em;
+  height: 23em;
+  border-radius: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 10px 10px 30px lightslategray;
+}
+
+.img-1 {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.img-2-container {
+  width: 30em;
+  height: 29em;
+  border-radius: 1.5em;
+  overflow: hidden;
+  box-shadow: 10px 10px 30px lightslategray;
+}
+
+.img-2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.img-3 {
+  object-fit: cover;
+  position: relative;
+
+}
+
+.bg-img {
+  height: 100vh;
+  background-color: #f7f7f7;
+  position: relative;
+  /* background-image: url("img/개운한 사진22.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.go-button {
+  border: none;
+  border-radius: 4em;
+  width: 20em;
+  height: 4em;
+  background-color: #0554f6;
+  color: white;
+  margin-top: 1em;
+}
+
+
+/* 푸터 스타일 */
+
+h2 {
+  margin: 0;
+  margin-bottom: -0.2em;
+  padding: 0;
+}
+
+.footer-text {
+  font-family: "Pretendard-Regular";
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.footer-sub-text {
+  font-family: "Pretendard-Regular";
+  font-size: 0.9rem;
+}
+.footer-wrap {
+  /* background-color: rgb(16, 16, 16); */
+  /* color: rgb(153, 153, 153); */
+  background-color: #f9fafb;
+  color:black;  
+  padding: 1em;
+}
+
+.footer a {
+  text-decoration:none;
+  /* color: rgb(153, 153, 153); */
+  color:black;
+}
+
+.footer a :hover{
+  color : #0554f6;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 50 50; */
+  margin: 0 auto;
+  /* max-width: 1080px; */
+}
+
+.right i{
+  margin-right : 10px;
 }
