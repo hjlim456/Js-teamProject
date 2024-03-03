@@ -249,7 +249,6 @@ h2 {
   max-width: 1080px;
 }
 
-
 @media screen and (max-width: 63rem) {
   body {
     padding: 2em;
@@ -752,48 +751,54 @@ border-radius: 1rem;
 
 /* 경일님 */
 .howto {
-font-size: 22px;
-font-weight: 700;
-color: #ffffff;
-background-color: #007bff;
-padding: 10px;
-padding-top: 150px;
-border-radius: 5px;
-box-shadow: 0 rgba(0,0,0,0.1);
-margin-bottom: 15px;
-text-align: center;
-align-items: center;
-}
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #007bff;
+  border-radius: 1em;
+  box-shadow: 0 rgba(0,0,0,0.1);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .linemenuview {
+  display: flex;
+  align-items: start;
+  text-align: left;
+  padding: 8px 0;
+  }
+  
+  .linemenu {
+  margin-right: 10px;
+  white-space: nowrap;
+  background-color: #5A81FA;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 30em;
+  display: inline-block;
+  min-width: 80px;
+  max-width: 150px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;    
+  }
+  
+  .exec {
+  background-color: #ffffff;
+  border-radius: 1.5em;
+  padding: 1em;
+  }
 
-.linemenuview {
-display: flex;
-align-items: center;
-padding: 8px 0;
-}
-
-.linemenu {
-margin-right: 10px;
-white-space: nowrap;
-background-color: #7d9cbb;
-color: #ffffff;
-padding: 5px 10px;
-border-radius: 5px;
-display: inline-block;
-min-width: 80px;
-max-width: 150px;
-text-align: center;
-overflow: hidden;
-text-overflow: ellipsis;    
-}
-
-.exec {
-background-color: #ffffff;
-border-radius: 8px;
-padding: 15px;
-margin-bottom: 20px;
-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-.execmain{
-margin-left: 10em;
-width:80%;
-}
+  .detail-go{
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    margin-top: 2em;
+    background-color: none;
+  }
+  
+  .detail-go:hover{
+    font-weight: 900;
+  }

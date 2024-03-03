@@ -247,13 +247,17 @@ document.getElementById('result').innerHTML = myHtml;
 
 }
 
-document.getElementById('clickgoto').addEventListener('click', () => {
-window.location.href = "exercise.html";
-});
+document.getElementById('detail-go').addEventListener('click', () => {
+  window.location.href = "exercise.html";
+  });
 
-document.getElementById('result').addEventListener('click', () => {
-window.location.href = "exercise.html";
-});
+// document.getElementById('clickgoto').addEventListener('click', () => {
+// window.location.href = "exercise.html";
+// });
+
+// document.getElementById('result').addEventListener('click', () => {
+// window.location.href = "exercise.html";
+// });
 
 let userSport=document.getElementById("plan-sport-input")
 let userWater=document.getElementById("plan-water-input")
