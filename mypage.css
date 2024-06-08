@@ -1,572 +1,752 @@
 
 @font-face {
-    font-family: "Pretendard-Regular";
-    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-      format("woff");
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  body {
-    font-family: "Pretendard-Regular";
-    margin: 0;
-    padding: 0;
-  }
-  
-  p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* 폰트 스타일 */
-  .main-title {
-      font-family: "Pretendard-Regular";
-      font-weight: 900;
-      font-size: 2.7rem;
-      line-height: 120%;
-    }
-    
-  .sub-title {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Pretendard-Regular";
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 폰트 스타일 */
+.main-title {
     font-family: "Pretendard-Regular";
     font-weight: 900;
-    font-size: 1.5rem;
-    color: #0554f6;
-    margin-top: 2.5em;
+    font-size: 2.7rem;
+    line-height: 120%;
   }
   
-  .note-title {
-    font-family: "Pretendard-Regular";
-    font-weight: 900;
-    font-size: 1.2rem;
-    color: #0554f6;
-  }
-  
-  .note-text {
-    font-family: "Pretendard-Regular";
-    font-weight: 900;
-    font-size: 1.2rem;
-  }
-  
-  .counter-text {
-    font-family: "Pretendard-Regular";
-    font-weight: 900;
-    font-size: 7rem;
-    color: #0554f6;
-  }
-  
-  .changing-emoji {
-    font-size: 5.5rem;
-    margin-bottom: 0.2em;
-  }
-  
-  
-  /* 영역 스타일 */
-  .exercise-calories-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center; 
-    min-height: 100dvh;
-  }
-  
-  .calories-title-area{
-    margin-bottom: 1em;
-  }
-  
-  .exercise-calories {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5em;
-    margin: 0.2em;
-  }
-  
-  .exercise-input-area {
-    width: 35em;
-    height: 25em;
-    background-color: #f9fafb;
-    border-radius: 1.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .result-area {
-    width: 35em;
-    height: 25em;
-    background-color: #f9fafb;
-    border-radius: 1.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    animation: fadeIn 2s ease-in-out forwards;
-  }
-  
-  .message-text-area{
-    width: 90%;
-    margin-bottom: 1em;
+.sub-title {
+  font-family: "Pretendard-Regular";
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #0554f6;
+  margin-top: 2.5em;
+}
+
+.note-title {
+  font-family: "Pretendard-Regular";
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #0554f6;
+}
+
+.note-text {
+  font-family: "Pretendard-Regular";
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.counter-text {
+  font-family: "Pretendard-Regular";
+  font-weight: 900;
+  font-size: 7rem;
+  color: #0554f6;
+}
+
+.changing-emoji {
+  font-size: 5.5rem;
+  margin-bottom: 0.2em;
+}
+
+
+/* 영역 스타일 */
+.exercise-calories-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; 
+  min-height: 100dvh;
+}
+
+.calories-title-area{
+  margin-bottom: 1em;
+}
+
+.exercise-calories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  margin: 0.2em;
+}
+
+.exercise-input-area {
+  width: 35em;
+  height: 25em;
+  background-color: #f9fafb;
+  border-radius: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.result-area {
+  width: 35em;
+  height: 25em;
+  background-color: #f9fafb;
+  border-radius: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.message-text-area{
+  width: 90%;
+  margin-bottom: 1em;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    animation: fadeIn 2s ease-in-out forwards;
   }
+  to {
+    opacity: 1;
+  }
+}
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+.recommend-exercise{
+  margin-top: 2.5em;
+}
 
-  .recommend-exercise{
-    margin-top: 2.5em;
-  }
-  
-  .guide-img-wrap {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .search-guide-img {
-    display: flex;
-  }
-    
-  /* 요소 스타일 */
-  .exercise-input-box {
-    border: none;
-    border-radius: 1em;
-    width: 90%;
-    height: 80%;
-    padding-left: 1em;
-  }
+.guide-img-wrap {
+  display: flex;
+  justify-content: center;
+}
 
-  .exercise-search-button {
-    border: none;
-    border-radius: 2em;
-    width: 90%; 
-    height: 50px;
-    background-color: #0554f6;
-    color: white;
-    margin-top: 1em;
-  }
+.search-guide-img {
+  display: flex;
+}
   
-  .img-container {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    overflow: hidden;
-    margin: 10px;
+/* 요소 스타일 */
+.exercise-input-box {
+  border: none;
+  border-radius: 1em;
+  width: 90%;
+  height: 80%;
+  padding-left: 1em;
+}
+
+.exercise-search-button {
+  border: none;
+  border-radius: 2em;
+  width: 90%; 
+  height: 50px;
+  background-color: #0554f6;
+  color: white;
+  margin-top: 1em;
+}
+
+.img-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.img-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  position: relative;
+}
+
+/* 네브바 스타일 */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.nav-box {
+  width: 30em;
+  height: 4.2em;
+  border-radius: 30em;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  gap: 2em;
+}
+
+.nav-item {
+  gap: 15em;
+}
+
+.nav-link {
+  transition: all 0.5s;
+}
+
+.nav-link:hover {
+  font-weight: 900;
+  color: #0554f6;
+}
+
+.my-icon {
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  background-color: #0554f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 푸터 스타일 */
+h2 {
+  margin: 0;
+  margin-bottom: -0.2em;
+  padding: 0;
+}
+
+.footer-text {
+  font-family: "Pretendard-Regular";
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.footer-sub-text {
+  font-family: "Pretendard-Regular";
+  font-size: 0.9rem;
+}
+.footer-wrap {
+  /* background-color: rgb(16, 16, 16); */
+  /* color: rgb(153, 153, 153); */
+  background-color: #f9fafb;
+  color:black;  
+  padding: 1em;
+}
+
+.footer a {
+  text-decoration:none;
+  /* color: rgb(153, 153, 153); */
+  color:black;
+}
+
+.footer a :hover{
+  color : #0554f6;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 50 50; */
+  margin: 0 auto;
+  /* max-width: 1080px; */
+}
+
+.right i{
+  margin-right : 10px;
+}
+
+/* footer 끝 */
+
+@media screen and (max-width: 63rem) {
+  body {
+    padding: 2em;
   }
-  
-  .img-container img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    position: relative;
+  .exercise-calories-wrap{
+    padding: 4em 1em;
   }
-  
-  /* 네브바 스타일 */
-  .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: 900;
-  }
-  
-  .nav-box {
-    width: 30em;
-    height: 4.2em;
-    border-radius: 30em;
+  .navbar{
+    position: sticky;
     background-color: white;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    gap: 2em;
+    top: 0;
   }
-  
-  .nav-item {
-    gap: 15em;
-  }
-  
-  .nav-link {
-    transition: all 0.5s;
-  }
-  
-  .nav-link:hover {
-    font-weight: 900;
-    color: #0554f6;
-  }
-  
-  .my-icon {
-    width: 3em;
-    height: 3em;
-    border-radius: 100%;
-    background-color: #0554f6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media screen and (max-width: 63rem) {
-    body {
-      padding: 2em;
-    }
-    .exercise-calories-wrap{
-      padding: 4em 1em;
-    }
-    .navbar{
-      position: sticky;
-      background-color: white;
-      top: 0;
-    }
-  }
+}
 
 /* =====효준 코드 시작 */
 .info-area{
-    background-color: lightblue;
+    background-color: #deecff;
     display: flex;
     flex-direction: row;
-
 }
-
-
 
 .info-text-area{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .info-text-area h1{
-    font-size: 5em;
-    margin: 0;
+  font-size: 5em;
+  margin: 0;
 }
 .info-text-area h4{
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 .self-check-area{
-    margin-top: 3em;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
+  margin-top: 3em;
+  display: flex;
+  text-align: center;
+}
+
+.self-check-area h4{
+margin: 1rem;
+margin-bottom: 1.3rem;
+font-size: 1.2rem;
+font-weight: 600;
 }
 
 .self-check-area div{
-    border: 1px solid black;
-    display: inline-block;
-    padding: 1em;
+  border-radius: 1rem;
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 1.5rem 1rem;
+  width: 15rem;
+  background-color: #f9fafb;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
 
-    background-color: white;
-    color: black;
+.self-check-area div button{
+display: block;
+margin: 0.25rem 0rem;
 }
 
 
 .name-height-weight-area{
-    margin-top: 5em;
-
-    display: flex;
-    
-    justify-content: space-around;
+  margin-top: 5em;
+  display: flex;   
+  justify-content: space-around;
 }
 
 /* ----버튼 css */
 
 .body-check-area button{
-    background-color: gainsboro;
-    color: black;
-    border: 1px solid gainsboro;
-    border-radius: 150px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-
-    .body-check-button-clicked{
-        background-color: red;
-        color: white;
-        border: 1px solid red;
-    }
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  border-radius: 150px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.body-check-area button:hover{
+  background-color: rgb(119, 241, 119);
+  color: white;
+  border: 1px solid rgb(119, 241, 119);
+  transition: 0.4s;
+}
+.body-check-area button:focus{
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+}
 
 
 .like-exercise-check-area button{
-
-    background-color: gainsboro;
-    color: black;
-    border: 1px solid gainsboro;
-    border-radius: 150px;
-    padding: 10px 20px;
-    cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  border-radius: 150px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
-    .like-exercise-check-button-clicked{
-        background-color: green;
-        color: white;
-        border: 1px solid green;
-    }
+  .like-exercise-check-area button:hover{
+      background-color: rgb(119, 241, 119);
+      color: white;
+      border: 1px solid rgb(119, 241, 119);
+  }
+  .like-exercise-check-area button:focus{
+      background-color: rgb(208, 156, 24);
+      color: white;
+      border: 1px solid rgb(208, 156, 24);
+  }
+
 
 
 .like-food-check-area button{
 
-    background-color: gainsboro;
-    color: black;
-    border: 1px solid gainsboro;
-    border-radius: 150px;
-    padding: 10px 20px;
-    cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  border-radius: 150px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
-    .like-food-check-button-clicked{
-        background-color: blue;
-        color: white;
-        border: 1px solid blue;
-    }
-/* ==========효준 코드 끝 */
-
-
-/* .info-input-box{
-    margin-left: 6em;
-    width: calc(50% - 54px);
-    display: inline-block;
-    background-color: #fc6c7c;
+.like-food-check-area button:hover{
+  background-color: rgb(119, 241, 119);
+  color: white;
+  border: 1px solid rgb(119, 241, 119);
+ 
+}
+.like-food-check-area button:focus{
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
 }
 
-
-.input-area>input{
-    margin-right: 0.5rem;
-    margin-top: 3rem;
-    width: 80%;
-
-    border: none;
-    border-bottom: 3px solid lightgray;
-
-}
-.input-area>input:focus{
-    outline: none;
-    border-bottom: 3px solid rgb(235, 60, 241);
-
-}
-  
-
-.add-button{
-    background-color: rgb(235, 60, 241);
-    border-radius: 8px;
-    border-style: solid;
-    border-color: rgb(235, 60, 241);
-    display: flex;
-    align-items: center;
-
-    height: 30px;
-    align-self: end;
-}
-.add-button>i{
-    padding-top: 1px;
-    color:   #F0F0F0;
-    
-}
-.add-button:disabled{
-    background-color: #b7b5b5;
-    border-color: #b7b5b5;
-}
-.add-button:disabled>i{
-    color: #F0F0F0;
-} */
-
-
-/* --------recipe style 이수---------*/
-.recipe-area{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.plan-style{
+background-color: #f9fafb;
+border-radius: 1rem;
+margin: 1rem;
+padding: 2.5rem 1rem 2.5rem 2.5rem;
+height: 33.5rem;
 }
 
-.recipe-title-area{
-  text-align: center;
-  margin-bottom: 1rem;
+.plan-input-area{
+margin-top: 0.5rem;
+margin-bottom: 0.75rem;
 }
 
-.cotent-center{
-  display: flex;
-  justify-content: center;
+.plan-line{
+border-radius: 1rem;
+margin: 0.25rem 0rem;
+display: flex;
+flex-direction: column;
+max-height: 21rem;
+overflow-y: scroll;
 }
 
-.recipe{
-  background-color: #f9fafb;
-  border-radius: 1.5em;
-  margin: 0.5rem 0.5rem;
-  width: 30em;
-  height: 38em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.emoji{
-  font-size: 3rem;
-}
-
-.recipecard-area{
-  overflow-x: scroll;
-  position: relative;
-}
-
-.recipecard-area ::-webkit-scrollbar-horizontal {
-  height: 12px; /* 스크롤 바의 높이 */
-  background-color: #f0f0f0; /* 스크롤 바의 배경색 */
-}
-
-.arrow-button{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+.plan-item{
+  background-color: white;
+  border-radius: 2rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.recipe-scroll{
+.plan-item div{
+padding: 0.25rem 0.5rem;
+}
+
+.plan-item div button{
+margin-top: 0.3rem;
+}
+
+.plan-date{
+  width: 4.5rem;
+  margin: 0.5rem;
+  margin-left: 1rem;
+}
+
+.plan-sport{
+width: 8rem;
+/* overflow: scroll; */
+scrollbar-width: none;
+}
+
+.plan-water{
+width: 8rem;
+}
+
+#plan-sport-input{
+  width: 45%;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+}
+
+#plan-water-input{
+  width: 40%;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+}
+
+.name-add-button{
+border: #0554f6;
+border-radius: 1.5rem;
+padding: 0.25rem 0.6rem;
+background-color: #0554f6;
+color: white;
+}
+
+.plan-delete-button{
+  border: none;
+  background-color: transparent;
+}
+
+/* ==========효준 코드 끝 */
+
+
+/* .info-input-box{
+  margin-left: 6em;
+  width: calc(50% - 54px);
+  display: inline-block;
+  background-color: #fc6c7c;
+}
+
+
+.input-area>input{
+  margin-right: 0.5rem;
+  margin-top: 3rem;
+  width: 80%;
+
+  border: none;
+  border-bottom: 3px solid lightgray;
+
+}
+.input-area>input:focus{
+  outline: none;
+  border-bottom: 3px solid rgb(235, 60, 241);
+
+}
+
+
+.add-button{
+  background-color: rgb(235, 60, 241);
+  border-radius: 8px;
+  border-style: solid;
+  border-color: rgb(235, 60, 241);
   display: flex;
-  width: max-content;
+  align-items: center;
+
+  height: 30px;
+  align-self: end;
+}
+.add-button>i{
+  padding-top: 1px;
+  color:   #F0F0F0;
+  
+}
+.add-button:disabled{
+  background-color: #b7b5b5;
+  border-color: #b7b5b5;
+}
+.add-button:disabled>i{
+  color: #F0F0F0;
+} */
+
+
+/* --------recipe style 이수---------*/
+.recipe-area{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.recipe-title-area{
+text-align: center;
+margin-bottom: 1rem;
+}
+
+.cotent-center{
+display: flex;
+justify-content: center;
+}
+
+.recipe{
+background-color: #f9fafb;
+border-radius: 1.5em;
+margin: 0.5rem 0.5rem;
+width: 30em;
+height: 38em;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.emoji{
+font-size: 3rem;
+}
+
+.recipecard-area{
+overflow-x: scroll;
+position: relative;
+padding-bottom: 0.5rem;
+}
+
+.arrow-button{
+position: absolute;
+width: 100%;
+height: 100%;
+z-index: 1;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.recipe-scroll{
+display: flex;
+width: max-content;
 }
 
 .recipe-research{
-  margin: 2rem 0rem;
+margin: 2rem 0rem;
 }
 
 .recipe-research input{
-  width: 20rem;
-  height: 3rem;
-  border: none;
-  border-radius: 1rem;    
-  text-align: center;
+width: 20rem;
+height: 3rem;
+border: none;
+border-radius: 1rem;    
+padding-left: 1rem;
 }
 
 .recipe-research button{
-  width: 4rem;
-  height: 3rem;
-  border: none;
-  border-radius: 2rem;
-  background-color: #0554f6;
-  color: white;
+width: 4rem;
+height: 3rem;
+border: none;
+border-radius: 2rem;
+background-color: #0554f6;
+color: white;
 }
 
 .recipe-card{
-  border: none;
-  background-color: white;
-  border-radius: 1rem;
-  margin-right: 0.5rem;
-  padding: 0;
-  width: 12rem;
-  height: 14.5rem;
-  overflow: hidden;
-  position: relative;
+border: none;
+background-color: white;
+border-radius: 1rem;
+margin-right: 0.5rem;
+padding: 0;
+width: 12rem;
+height: 14.5rem;
+overflow: hidden;
+position: relative;
 }
 
 .recipe-card-image{
-  height: 8rem;
-  overflow: hidden;
-  margin-bottom: 0.5rem;
-  position: relative;
-  position: absolute;
-  top: 0px;
+height: 8rem;
+overflow: hidden;
+margin-bottom: 0.5rem;
+position: relative;
+position: absolute;
+top: 0px;
 }
 
 .recipe-card img{
-  max-width: 12rem;
-  max-height: 12rem;
+max-width: 12rem;
+max-height: 12rem;
 }
 
 .recipe-card h3{
-  margin-top: 8.5rem;
-  font-size: 1.05rem;
-  font-weight: 600;
+margin-top: 8.5rem;
+font-size: 1.05rem;
+font-weight: 600;
 }
 
 .recipetext-area{
-  background-color: #f9fafb;
-  border-radius: 1.5em;
-  margin: 0.5rem 0.5rem;
-  width: 30em;
-  height: 38em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+background-color: #f9fafb;
+border-radius: 1.5em;
+margin: 0.5rem 0.5rem;
+width: 30em;
+height: 38em;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .recipe-alltext{
-  background-color: white;
-  border-radius: 1rem;
-  width: 90%;
-  height: 90%;
-  padding: 0rem 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  
+background-color: white;
+border-radius: 1rem;
+width: 90%;
+height: 90%;
+padding: 0rem 2rem 1rem;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+
 }
 
 .recipe-alltext h5{
-  text-align: center;
-  font-weight: 600;
-  margin-top: 5rem;
+text-align: center;
+font-weight: 600;
+margin-top: 5rem;
 }
 
 .recipe-alltext-img{
-  border-radius: 1rem;
-  margin: 1rem;
-  max-width: 100%;
-  min-height: 12rem;
-  /*margin-bottom: 2rem;*/
-  align-self: center;
-  overflow: hidden;
+border-radius: 1rem;
+margin: 1rem;
+max-width: 100%;
+min-height: 12rem;
+/*margin-bottom: 2rem;*/
+align-self: center;
+overflow: hidden;
 }
 
 .recipe-alltext-img img{
-  height: 17rem;
+height: 17rem;
 }
 
 .recipe-alltext-title{
-  text-align: center;
-  margin-bottom: 0.5rem;
+text-align: center;
+margin-bottom: 0.5rem;
 }
 
 .recipe-title{
-  font-size: 1.2rem;
-  font-weight: 600;
+font-size: 1.2rem;
+font-weight: 600;
 }
 
 .recipe-blue{
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #0554f6;
+font-size: 1.1rem;
+font-weight: 600;
+color: #0554f6;
 }
 
 .recipe-smalltext{
-  font-size: 0.8rem;
+font-size: 0.8rem;
 }
 
 .recipe-ingredient{
-  overflow: scroll;
-  scrollbar-width: none;
+overflow-y: scroll;
 }
 
 .font-boldweight{
-  font-weight: 600;
+font-weight: 600;
 }
 
 .nutri-font{
-  font-weight: 600;
-  font-size: 0.9rem;
-  text-align: center;
+font-weight: 600;
+font-size: 0.9rem;
+text-align: center;
 }
 
+::-webkit-scrollbar{
+background-color: #f9fafb;
+}
+
+::-webkit-scrollbar-thumb{
+background-color: white;
+border-radius: 1rem;
+}
+
+.recipe-ingredient::-webkit-scrollbar{
+background-color: white;
+}
+
+.recipe-ingredient::-webkit-scrollbar-thumb{
+background-color: #f7f6f6;
+border-radius: 1rem;
+}
+
+
 @media screen and (max-width:48rem){
+
+  .recipe-area{
+    flex-wrap: wrap;
+  }
+
   .recipe{
-      width: 25em;
+    max-width: 90dvw;
   }
 
   .recipetext-area{
-      width: 25em;
+    max-width: 90dvw;
   }
 
   .recipe-alltext{
@@ -582,9 +762,79 @@
       font-size: 0.7rem;
   }
 
+  .recipe-research input{
+    width: 90%;
+  }
+
   .recipe-research button{
       margin: 0.5rem;
-      width: 20rem;
+      width: 90%;
+  }
+
+  /* all style */
+  .main-title{
+    font-size: 2rem;
+  }
+
+  /* 효준님영역 */
+  
+  .self-check-area{
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem 1rem;
+  }
+
+  .self-check-area div{
+    width: 100%;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .plan-style{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .plan-line{
+    font-size: 0.9rem;
+    max-height: 17.5rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+
+  .plan-line div{
+    margin-right: 0rem;
+    padding-right: 0rem;
+    padding-left: 0.5rem;
+  }
+
+  .plan-item{
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .plan-date{
+    margin: 0rem;
+  }
+
+  #plan-sport-input{
+    width: 54%;
+  }
+  
+  #plan-water-input{
+    width: 44%;
+  }
+
+  .name-add-button{
+    width: 100%;
+    margin: 0.5rem 0rem;
+  }
+
+  .plan-delete-button{
+    margin-right: 0.5rem;
+  }
+
+  .navbar-brand{
+    margin: 0rem;
   }
 }
 /* recipe style end */
@@ -595,44 +845,54 @@
   font-weight: 700;
   color: #ffffff;
   background-color: #007bff;
-  padding: 10px;
-  padding-top: 150px;
-  border-radius: 5px;
+  border-radius: 1em;
   box-shadow: 0 rgba(0,0,0,0.1);
-  margin-bottom: 15px;
   text-align: center;
-  align-items: center;
-}
-
-.linemenuview {
   display: flex;
+  justify-content: center;
   align-items: center;
+  }
+  
+  .linemenuview {
+  display: flex;
+  align-items: start;
+  text-align: left;
   padding: 8px 0;
-}
-
-.linemenu {
+  }
+  
+  .linemenu {
   margin-right: 10px;
   white-space: nowrap;
-  background-color: #7d9cbb;
+  background-color: #5A81FA;
   color: #ffffff;
   padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 30em;
   display: inline-block;
   min-width: 80px;
   max-width: 150px;
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;    
-}
-
-.exec {
+  }
+  
+  .exec {
   background-color: #ffffff;
-  border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-.execmain{
-  margin-left: 10em;
-  width:80%;
-}
+  border-radius: 1.5em;
+  padding: 1em;
+  }
+
+  .detail-go{
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    margin-top: 2em;
+    background-color: none;
+  }
+  
+  .detail-go:hover{
+    font-weight: 900;
+  }
+
+  .right i{
+    margin-right : 10px;
+  }
